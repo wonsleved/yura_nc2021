@@ -25,17 +25,12 @@ h1 {
     letter-spacing: 0.2em;
 }
 
-main {
-    height: 1200px;
-}
-
 section {
     padding: 20px;
 }
 
-
 section:nth-child(even) {
-    background-color: #5cbfcc;
+    background-color: #5dc3ce;
 }
 
 section h2 {
@@ -44,14 +39,11 @@ section h2 {
     text-align: center;
 }
 
-
-
 .section-inner {
     overflow: hidden;
     margin: 0 auto;
     max-width: 1366px;
 }
-
 
 .block {
     margin: 20px;
@@ -76,30 +68,65 @@ section h2 {
     padding-left: 30px;
 }
 
-.block#block1 {
+.group {
+    border-top: 1px solid black;
+}
+
+/*  Section 1 */
+
+#block1 {
     position: sticky;
     top: 20px;
     left: 100%;
 }
 
-.block#block2 {
+#block2 {
     position: static;
     top: 9999px;
     left: 9999px;
 }
 
-.block#block3 {
+#block3 {
     position: relative;
     top: -400px;
     left: 346px;
 }
 
-.block#block4 {
+#block4 {
     position: absolute;
     top: 458px;
     right: calc((100vw - 1366px) / 2 + 320px);
 }
 
+/*  Section 2 */
 
+#block5 {
+    float: left;
+    clear: both;
+}
 
+#block6 {
+    float: left;
+    clear: right;
+}
+
+#block7 {
+    float: right;
+    clear: right;
+}
+
+#block8 {
+    float: right;
+    clear: left;
+}
+
+#block9 {
+    float: right;
+    clear: right;
+}
+
+#block10 {
+    float: left;
+    clear: left;
+}
 
