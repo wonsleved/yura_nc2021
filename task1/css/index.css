@@ -68,10 +68,6 @@ section h2 {
     padding-left: 30px;
 }
 
-.group {
-    border-top: 1px solid black;
-}
-
 /*  Section 1 */
 
 #block1 {
@@ -128,5 +124,44 @@ section h2 {
 #block10 {
     float: left;
     clear: left;
+}
+
+/* Section 3 */
+
+p span {
+    background-color: #e07f7e;
+    font-weight: bold;
+}
+
+#sp1 {
+    width: 1000px;
+    height: 100px;
+}
+
+#sp2 {
+    padding: 10px;
+}
+
+#sp3 {
+    padding: 10px;
+    margin: 10px;
+}
+
+#sp4 {
+    display: inline-block;
+    width: 430px;
+    height: 30px;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: #778beb;
+}
+
+footer span {
+    text-align: center;
+    display: block;
+    padding: 40px 0;
+    font-size: 30px;
 }
 
