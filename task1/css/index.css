@@ -29,6 +29,30 @@ main {
     height: 1200px;
 }
 
+section {
+    padding: 20px;
+}
+
+
+section:nth-child(even) {
+    background-color: #5cbfcc;
+}
+
+section h2 {
+    padding: 20px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+
+.section-inner {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+
 .block {
     margin: 20px;
     padding: 20px;
@@ -59,9 +83,23 @@ main {
 }
 
 .block#block2 {
-    position: absolute;
-    top: 100px;
-    left: 100px;
+    position: static;
+    top: 9999px;
+    left: 9999px;
 }
+
+.block#block3 {
+    position: relative;
+    top: -400px;
+    left: 346px;
+}
+
+.block#block4 {
+    position: absolute;
+    top: 458px;
+    right: calc((100vw - 1366px) / 2 + 320px);
+}
+
+
 
 
