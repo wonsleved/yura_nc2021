@@ -68,23 +68,138 @@ footer span {
 
 .checkbox {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.checkbox ul {
+    margin: 0 100px;
 }
 
 .checkbox label {
     font-size: 36px;
+    display: block;
+    padding: 10px;
 }
-
 
 .checkbox li {
     padding: 10px;
+    width: 240px;
     margin-bottom: 5px;
     border-radius: 4px;
     background-color: #5dc3ce;
     list-style: none;
+    transition: 0.2s;
+}
+
+.checkbox li {
+    box-shadow: inset -4px 0 0 -4px #214749;
+}
+
+.checkbox li:hover {
+    box-shadow: inset -2px 0 2px -2px #214749;
+    transition: 0.2s;
+}
+
+/*      Lists       */
+
+
+.lists {
+    display: flex;
+    justify-content: center;
+}
+
+.lists div[id|="lists"] {
+    background-color: #ff7675;
+    padding: 0 20px;
+    margin: 0 50px;
+}
+
+.lists span {
+    text-align: center;
+    margin: 0 -20px;
+    font-weight: bolder;
+    background-color: #e36968;
+    display: block;
+    padding: 10px;
+}
+
+#lists-div2 ol {
+    list-style: inside lower-roman;
+}
+
+#lists-div3 ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+#lists-div3 li:before {
+    counter-increment: li;
+    content: counters(li, ".") ". ";
 }
 
 
+/*      Text & bg      */
 
+#bg1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+}
 
+#bg1 > a {
+    display: block;
+    text-decoration: none;
+    background-color: rgba(159, 159, 159, 0.5);
+    height: 330px;
+    margin: 0 50px;
+    transition: 0.2s;
+}
 
+#bg1 > a:hover {
+    background-color: rgba(150, 150, 150, 0.5);
+    transition: 0.2s;
+}
+
+#bg1 > a:visited {
+    background-color: rgba(255, 231, 231, 0.5);
+}
+
+#bg1 > a > p {
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+}
+
+#text1 span.up {
+    text-transform: uppercase;
+}
+
+#text1 span.cap {
+    text-transform: capitalize;
+}
+
+#text1 {
+    text-align: center;
+}
+
+#text2 {
+    text-align: justify;
+    word-break: break-all;
+    word-spacing: 2em;
+}
+
+#text3 {
+    text-align: start;
+    word-break: keep-all;
+    letter-spacing: 0.07em;
+}
+
+#text4 {
+    text-align: end;
+    word-break: normal;
+}
