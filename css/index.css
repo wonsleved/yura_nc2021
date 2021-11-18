@@ -58,6 +58,33 @@ footer span {
 }
 
 
-.checkbox {
 
+:root {
+    --circle-checkbox-color: #ff7675;
+    --neumorphic-checkbox-color: #5dc3ce;
+    --neumorphic-checkbox-shadow-bright: #73eeff;
+    --neumorphic-checkbox-shadow-dark: #47949d;
 }
+
+.checkbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkbox label {
+    font-size: 36px;
+}
+
+
+.checkbox li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: #5dc3ce;
+    list-style: none;
+}
+
+
+
+
+
