@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link href="../css/registration-form/registration-form.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <form action="#" class="main__form form">
+            <h1 class="form__title title">Sign up</h1>
+            <fieldset class="form__fieldset fieldset">
+                <legend class="legend">Basic Details</legend>
+                <div class="row form__row">
+                    <div class="row__col row__col_width_half">
+                        <label for="fullName" class="label form__label">Full name</label>
+                        <input type="text" class="input form__input input_type_text-content"
+                               id="fullName" placeholder="Enter full name">
+                    </div>
+                    <div class="row__col row__col_width_half">
+                        <input type="file" class="input form__input input_type_file"
+                               id="addPhoto" placeholder="Enter Full Name">
+                        <label for="addPhoto" class="label form__label label_type_photo">
+                            <figure class="label__figure figure">
+                                <div class="figure__content">
+                                    <img class="figure__image figure__image_filter_invert"
+                                         src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-photo-camera-camping-kiranshastry-lineal-kiranshastry.png"
+                                         alt="upload image"/>
+                                </div>
+                                <span class="figure__description">Add photo</span>
+                            </figure>
+                        </label>
+                    </div>
+                </div>
+                <div class="row form__row">
+                    <div class="row__col row__col_width_full">
+                        <label for="constituency" class="label form__label">Constituency</label>
+                        <input type="search" class="input form__input input_type_text-content"
+                               id="constituency" placeholder="Search constituency">
+                    </div>
+                </div>
+                <div class="row form__row">
+                    <div class="row__col row__col_width_half">
+                        <label for="party" class="label form__label">Select party you work for</label>
+                        <select class="select input form__input input_type_text-content"
+                                id="party">
+                            <option class="select__option" value="" disabled selected >- Select party -</option>
+                            <option class="select__option" value="One">One</option>
+                            <option class="select__option" value="Two">Two</option>
+                            <option class="select__option" value="Three">Three</option>
+                        </select>
+                    </div>
+                    <div class="row__col row__col_width_half">
+                        <label for="position" class="label form__label">Select party you work for</label>
+                        <select class="select input form__input input_type_text-content"
+                                id="position">
+                            <option class="select__option" value="" disabled selected >- Select position -</option>
+                            <option class="select__option" value="One">One</option>
+                            <option class="select__option" value="Two">Two</option>
+                            <option class="select__option" value="Three">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form__row">
+                    <div class="row__col row__col_width_half">
+                        <label for="date" class="label form__label">Date of birth</label>
+                        <input type="date" class="input form__input input_type_text-content"
+                               id="date" placeholder="Search constituency">
+                    </div>
+                    <div class="row__col row__col_width_half">
+                        <span class="label form__label">Gender</span>
+                        <input type="radio" class="input"
+                               id="male">
+                        <label for="male" class="label">Male</label>
+                        <input type="radio" class="input"
+                               id="female">
+                        <label for="female" class="label">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
