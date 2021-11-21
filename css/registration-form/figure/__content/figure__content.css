@@ -1,0 +1,14 @@
+.figure__content {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto 6px;
+    border-radius: 50%;
+    background: #ff9000;
+    box-shadow: 0 0 5px 0 #ff9000;
+    transition: 0.2s;
+}
+
+.figure__content:hover {
+    box-shadow: 0 0 5px 2px #ff9000;
+    transition: 0.2s;
+}

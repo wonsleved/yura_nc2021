@@ -1,0 +1,16 @@
+.label_type_radio {
+    cursor: pointer;
+}
+
+.label_type_radio::before {
+    margin-right: 5px;
+    position: relative;
+    bottom: -5px;
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ff9000;
+    border-radius: 50%;
+    background-color: transparent;
+}

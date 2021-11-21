@@ -1,0 +1,6 @@
+.figure__image {
+    width: 40px;
+    margin: 0 auto;
+    transform: translateY(50%);
+    display: block;
+}

@@ -1,0 +1,7 @@
+.input_type_radio {
+    display: none;
+}
+
+.input_type_radio:checked + label::before {
+    background-color: #ff9000;
+}
