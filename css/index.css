@@ -14,7 +14,7 @@ body {
     background: #63cdda;
 }
 
-header {
+body > header {
     background: #3dc1d3;
     padding: 60px 0;
 }
@@ -45,14 +45,226 @@ section h2 {
     max-width: 1366px;
 }
 
-footer {
+body > footer {
     margin-top: 60px;
     background-color: #778beb;
 }
 
-footer span {
+body > footer span {
     text-align: center;
     display: block;
     padding: 40px 0;
     font-size: 30px;
+}
+
+
+
+
+
+section header nav {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+header nav span {
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: underline;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+header nav ul li:hover a {
+    color: #778beb;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.wrapper article {
+    width: 70%;
+}
+
+.wrapper aside {
+    width: 25%;
+}
+
+.nav-to-form a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 180px;
+    padding: 10px;
+    background-color: #778beb;
+    font-size: 18px;
+}
+
+.nav-to-form a:hover {
+    background-color: #6b7bd0;
+}
+
+.flex-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.grad {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+}
+
+.gr1 {
+    background: linear-gradient(47deg, #ff9000, #778beb);
+}
+
+.gr2 {
+    background: linear-gradient(to top, #778beb 20%, #5dc3ce 50%, #ff9000 80%);
+}
+
+.gr3 {
+    background: radial-gradient(#ff9000, #778beb);
+}
+
+.gr4 {
+    background: radial-gradient(at left, #778beb, #ff9000);
+}
+
+.gr5 {
+    background: radial-gradient(circle farthest-corner at 10px 5px, #ff9000, #778beb);
+}
+
+.gr6 {
+    background: radial-gradient(circle closest-corner at 10px 5px, #ff9000, #778beb);
+}
+
+.gr7 {
+    background: repeating-linear-gradient(33deg, #ff9000, #ff9000 10px, #778beb 10px, #778beb 20px);
+}
+
+.gr8 {
+    background: repeating-radial-gradient(circle, #ff9000, #ff9000 10px, #778beb 10px, #778beb 20px);
+}
+
+.border {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background: #e07f7e;
+    border: 10px solid #778beb;
+}
+
+.bd1 {
+    border-radius: 0 0 25px 25px;
+}
+
+.bd2 {
+    border-radius: 10px 20px 30px 40px/50px;
+}
+
+.bd3 {
+    border-radius: 50%;
+}
+
+.bd4 {
+    border-radius: 50% 0 50% 0;
+    border: 10px solid transparent;
+    border-image: linear-gradient(35deg, transparent 65%, #778beb 100%);
+    border-image-slice: 1;
+}
+
+.shadow {
+    border-radius: 50px;
+    margin: 20px;
+    width: 200px;
+    height: 150px;
+    background: rgb(96, 82, 205);
+}
+
+.sd1 {
+    background: #5dc3ce;
+    box-shadow:  10px 10px 30px #50a9b2,
+    -10px -10px 30px #67d3e0;
+}
+
+.sd2 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.sd3 {
+    background: linear-gradient(145deg, #50a9b2, #67d3e0);
+    box-shadow:  10px 10px 30px #50a9b2,
+    -10px -10px 30px #67d3e0;
+}
+
+.sd4 {
+    box-shadow: 0 10px 0 rgb(81, 71, 173);
+}
+
+.transition {
+    text-align: center;
+    color: #fff;
+    width: 200px;
+    padding: 40px 0;
+    height: 100px;
+    position: relative;
+    left: 0;
+    margin-bottom: 20px;
+    transition-delay: 0.5s;
+}
+
+.tr1 {
+    background-color: #778beb;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+}
+
+.tr2 {
+    background-color: #6d80d5;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+.tr3 {
+    background-color: #5c6ab4;
+    transition-timing-function: ease-in;
+    transition-duration: 3s;
+}
+
+.tr4 {
+    background-color: #5867ac;
+    transition-timing-function: ease-in-out;
+    transition-duration: 4s;
+}
+
+.tr5 {
+    background-color: #373e6d;
+    transition-timing-function: ease-out;
+    transition-duration: 5s;
+}
+
+.tr-hover:hover .transition {
+    left: calc(100% - 200px);
+    background-color: #e36a69;
 }
