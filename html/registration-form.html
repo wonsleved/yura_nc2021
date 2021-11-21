@@ -69,15 +69,30 @@
                     </div>
                     <div class="row__col row__col_width_half">
                         <span class="label form__label">Gender</span>
-                        <input type="radio" class="input"
-                               id="male">
-                        <label for="male" class="label">Male</label>
-                        <input type="radio" class="input"
-                               id="female">
-                        <label for="female" class="label">Female</label>
+                        <div class="radio-wrapper">
+                            <div class="radio-wrapper__radio-choice">
+                                <input type="radio" class="input input_type_radio" name="gender"
+                                       id="male">
+                                <label for="male" class="label label_type_radio">Male</label>
+                            </div>
+                            <div class="radio-wrapper__radio-choice">
+                                <input type="radio" class="input input_type_radio" name="gender"
+                                       id="female">
+                                <label for="female" class="label label_type_radio">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form__row">
+                    <div class="row__col row__col_width_full">
+                        <label for="vision_and_mission" class="label form__label">Vision & Mission</label>
+                        <textarea class="input form__input input_type_text-content textarea"
+                                  id="vision_and_mission" placeholder="Type here..."
+                                    rows="10"></textarea>
                     </div>
                 </div>
             </fieldset>
+            <button class="button form__button" type="submit">Save & Continue</button>
         </form>
     </main>
 </body>
