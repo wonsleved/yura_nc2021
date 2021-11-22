@@ -268,3 +268,83 @@ header nav ul li:hover a {
     left: calc(100% - 200px);
     background-color: #e36a69;
 }
+
+.transform {
+    background-color: #ff7675;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+}
+
+.tf1 {
+    transform: translate(-50px, -50px);
+}
+
+.tf2 {
+    transform: scaleX(0.6);
+}
+
+.tf3 {
+    transform: scaleY(1.3);
+}
+
+.tf4 {
+    transform: rotate(13deg);
+}
+
+.tf5 {
+    transform: skewX(13deg);
+}
+
+.tf6 {
+    transform: skewY(13deg);
+}
+
+.animation {
+    background-color: #6052cd;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+}
+
+.an1 {
+    animation: an1 2s infinite linear alternate;
+}
+
+.an2 {
+    position: relative;
+    animation: an2 2s infinite;
+}
+
+
+
+@keyframes an1 {
+    from {
+        background-color: #778beb;
+    }
+    to {
+        background-color: #ff7675;
+    }
+}
+
+@keyframes an2 {
+    from {
+        top: 0;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        top: -50px;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 0px;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        top: -25px;
+        animation-timing-function: ease-in;
+    }
+    to {
+        top: 0px;
+    }
+}
