@@ -267,3 +267,126 @@ body > footer span {
     filter: contrast(50%);
 }
 
+
+
+
+.grid-block {
+    display: grid;
+    grid-template: [start] "A A B" 150px [row2]
+                  [row2] "A A C"  200px [row3]
+                  [row3] "D E E" 100px [row-end] / 2fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.grid-block div {
+    background-color: #ff7675;
+}
+
+.grid-block .A {
+    grid-area: A;
+}
+
+.grid-block .B {
+    grid-area: B;
+}
+
+.grid-block .C {
+    grid-area: C;
+}
+
+.grid-block .D {
+    grid-area: D;
+}
+
+.grid-block .E {
+    grid-area: E;
+}
+
+.grid-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-images > div {
+    height: auto;
+    min-width: 200px;
+}
+
+.grid-images > div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-images .B {
+    grid-row: span 3;
+}
+
+.grid-images .D {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-images .E {
+    grid-row: span 2;
+}
+
+.grid-images .F {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.overflow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: visible;
+    padding-bottom: 100px;
+}
+
+.overflow > div {
+    padding: 10px;
+    border: 2px dashed #ff7675;
+    width: 400px;
+    height: 100px;
+}
+
+.ov1 {
+    overflow: scroll;
+}
+
+.ov2 {
+    overflow: hidden;
+}
+
+.ov3 {
+    overflow: visible;
+}
+
+.writing {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.writing > div {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(93, 195, 206);
+}
+
+.wr1 {
+    direction: rtl;
+}
+
+.wr2 {
+    writing-mode: vertical-rl;
+}
+
+.wr3 {
+    writing-mode: vertical-lr;
+}
