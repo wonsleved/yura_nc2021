@@ -1,168 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="../css/index.css" rel="stylesheet" type="text/css">
-    <title>Task 3</title>
+    <title>Yandex</title>
 </head>
 <body>
-    <header>
-        <h1>Task 3</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Flex</h2>
-            <div class="section-inner">
-                <div class="flex-block fb1">
-                    <div class="flex"></div>
-                    <div class="flex"></div>
-                    <div class="flex"></div>
-                    <div class="flex"></div>
+    <aside class="aside-info">
+        <div class="card">
+            <div class="card__shadow-box">
+                <div class="card__card-inner">
+                    <a class="card__item _sign-in _hover-bg-darker" href="#">
+                        <span class="card__item-icon yandex-item-icon"></span>
+                        <span class="card__item-title _center-bold">Войти</span>
+                    </a>
+                    <a class="card__item _hover-color-red" href="#">
+                        <span class="card__item-icon ya-mail-item-icon"></span>
+                        <span class="card__item-title">Почта</span>
+                    </a>
+                    <a class="card__item _hover-color-red" href="#">
+                        <span class="card__item-icon ya-disk-item-icon"></span>
+                        <span class="card__item-title">Диск</span>
+                    </a>
                 </div>
-                <div class="flex-block fb2">
-                    <div class="flex"></div>
-                    <div class="flex"></div>
-                    <div class="flex"></div>
-                    <div class="flex"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__shadow-box _hover-offset">
+                <a class="card__item _solo" href="#">
+                    <span class="card__item-icon ya-plus-item-icon"></span>
+                    <span class="card__item-title">Попробовать плюс</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+    <div class="body-wrapper">
+        <div class="rows">
+            <header class="header rows__row">
+                <div class="header__headline headline">
+                    <div class="headline__item headline__left-corner">
+                        <a class="headline__city _hover-color-red" href="#">
+                            <svg class="headline__geo-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path fill="currentColor" d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"></path>
+                            </svg>
+                            <span class="headline__city-name">
+                                Москва
+                            </span>
+                        </a>
+                        <div class="headline__data-time">27 ноября, суббота 17:42</div>
+                    </div>
+                    <div class="headline__item headline__right-corner">
+                        <a class="headline__bar-item ya-cart-icon _hover-increase-opacity"></a>
+                        <a class="headline__bar-item ya-bell-icon _hover-increase-opacity">
+                            <svg class="notifier__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" focusable="false"><path class="notifier__clapper" d="M18 30a3 3 0 0 0 3-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 0 0 3 3z"></path><path class="notifier__bell" d="M15.687 12.5l.3-.164a1.5 1.5 0 0 0 .75-1.021l.142-.712a.75.75 0 0 1 .736-.603h.77a.75.75 0 0 1 .736.603l.142.712a1.5 1.5 0 0 0 .75 1.02l.3.165a5.586 5.586 0 0 1 3.24 4.47l.54 4.863c.1.906.563 1.733 1.282 2.292l.354.275a1.5 1.5 0 0 1 .534 1.548L26.25 26a1.32 1.32 0 0 1-1.28 1H11.03a1.32 1.32 0 0 1-1.28-1l-.013-.052a1.5 1.5 0 0 1 .534-1.548l.354-.275a3.375 3.375 0 0 0 1.282-2.292l.54-4.864a5.586 5.586 0 0 1 3.24-4.469z"></path></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex-block fb3">
-                    <div class="flex fl1"></div>
-                    <div class="flex fl2"></div>
-                    <div class="flex fl3"></div>
-                    <div class="flex fl4"></div>
-                </div>
-                <div class="flex-block fb4">
-                    <div class="flex fl1h"></div>
-                    <div class="flex fl2h"></div>
-                    <div class="flex fl3h"></div>
-                    <div class="flex fl4h"></div>
-                </div>
-                <div class="flex-block fb5">
-                    <div class="flex fl1h"></div>
-                    <div class="flex fl2h"></div>
-                    <div class="flex fl3h"></div>
-                    <div class="flex fl4h"></div>
-                </div>
-                <div class="flex-block fb6">
-                    <div class="flex fl1h"></div>
-                    <div class="flex fl2h"></div>
-                    <div class="flex fl3h"></div>
-                    <div class="flex fl4h"></div>
-                </div>
+            </header>
+            <main class="rows__row main">
+                <div class="main__content">
+                    <div class="main__news">
+                        <div class="main__titles">
+                            <h1 class="main__title _primary"><a href="#" class="main__title-link _hover-color-red">Сейчас в СМИ</a></h1>
+                            <h1 class="main__title _secondary"><a href="#" class="main__title-link _hover-color-red">в Москве</a></h1>
+                            <span class="main__title _additional"><a href="#" class="main__title-link _hover-color-red">Коронавирус</a></span>
+                        </div>
+                    </div>
+                    <div class="widgets">
+                        <div class="widgets__weather">
+                            <div class="main__titles">
+                                <h1 class="main__title _primary"><a href="#" class="main__title-link _hover-color-red">Погода</a></h1>
+                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link _hover-color-red">Карта осадков</a></span>
 
-            </div>
-        </section>
-        <section>
-            <h2>Columns</h2>
-            <div class="section-inner">
-                <div class="column-block">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta dolorem expedita, id illo impedit ipsam libero, non numquam placeat quasi quibusdam saepe sapiente. Commodi consectetur consequuntur culpa, dicta earum eius error est, et eum eveniet excepturi exercitationem fugiat fugit iure iusto magnam nostrum odio pariatur, quas quos recusandae sapiente tenetur ullam veniam vero vitae voluptas voluptatum? Eveniet iste nihil nulla odio quibusdam voluptatem! Aspernatur, assumenda deleniti dolore hic labore libero molestiae obcaecati quia vero? Accusamus accusantium architecto, asperiores consectetur, corporis dolores eaque exercitationem id illo in natus porro quis, sunt. Alias architecto cupiditate maiores nihil soluta. Assumenda, qui vitae.</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Transformations 3D</h2>
-            <div class="section-inner">
-                <div class="transformation-block">
-                    <div class="tb"><div class="ti1"></div></div>
-                    <div class="tb"><div class="ti2"></div></div>
-                    <div class="tb"><div class="ti3"></div></div>
-                    <div class="tb"><div class="ti4"></div></div>
-                    <div class="tb"><div class="ti5"></div></div>
-                    <div class="tb"><div class="ti6"></div></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Filter</h2>
-            <div class="section-inner">
-                <div class="filter-block">
-                    <div class="fil1"></div>
-                    <div class="fil2"></div>
-                    <div class="fil3"></div>
-                    <div class="fil4"></div>
-                    <div class="fil5"></div>
-                    <div class="fil6"></div>
-                    <div class="fil7"></div>
-                    <div class="fil8"></div>
-                    <div class="fil9"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Grid</h2>
-            <div class="section-inner">
-                <div class="grid-block">
-                    <div class="A"></div>
-                    <div class="B"></div>
-                    <div class="C"></div>
-                    <div class="D"></div>
-                    <div class="E"></div>
-                </div>
-                <div class="grid-images">
-                    <div class="A"><img src="https://images.unsplash.com/photo-1637603932817-4d7737f99876?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"></div>
-                    <div class="C"><img src="https://images.unsplash.com/photo-1637545255701-ecaea910dd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"></div>
-                    <div class="B"><img src="https://images.unsplash.com/photo-1637696867537-3b3c9f10ed10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"></div>
-                    <div class="D"><img src="https://images.unsplash.com/photo-1636884285351-0f14627ada21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"></div>
-                    <div class="E"><img src="https://images.unsplash.com/photo-1619796124432-c8b1670a190b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"></div>
-                    <div class="F"><img src="https://images.unsplash.com/photo-1637580980556-085dee659c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Overflow</h2>
-            <div class="section-inner">
-                <div class="overflow">
-                    <div class="ov1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur consequuntur cumque
-                            dicta dignissimos dolore dolorem doloremque doloribus dolorum eius eligendi enim eos
-                            facilis, harum id illum ipsa iste magni nam neque nostrum nulla perferendis possimus
-                            provident ratione reprehenderit, sapiente sit soluta temporibus veritatis. Alias autem
-                            commodi fugit nemo officiis.</p>
-                    </div>
-                    <div class="ov2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur consequuntur cumque
-                            dicta dignissimos dolore dolorem doloremque doloribus dolorum eius eligendi enim eos
-                            facilis, harum id illum ipsa iste magni nam neque nostrum nulla perferendis possimus
-                            provident ratione reprehenderit, sapiente sit soluta temporibus veritatis. Alias autem
-                            commodi fugit nemo officiis.</p>
-                    </div>
-                    <div class="ov3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur consequuntur cumque
-                            dicta dignissimos dolore dolorem doloremque doloribus dolorum eius eligendi enim eos
-                            facilis, harum id illum ipsa iste magni nam neque nostrum nulla perferendis possimus
-                            provident ratione reprehenderit, sapiente sit soluta temporibus veritatis. Alias autem
-                            commodi fugit nemo officiis.</p>
+                            </div>
+                        </div>
+                        <div class="widgets__transport"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h2>Writing</h2>
-            <div class="section-inner">
-                <div class="writing">
-                    <div class="wr1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nesciunt.</p>
-                    </div>
-                    <div class="wr2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nesciunt.</p>
-                    </div>
-                    <div class="wr3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nesciunt.</p>
-                    </div>
-                    <div class="wr4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nesciunt.</p>
-                    </div>
+            </main>
+        </div>
 
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <span>The end</span>
-    </footer>
+    </div>
 </body>
 </html>
