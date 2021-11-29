@@ -8,26 +8,30 @@
     <title>Yandex</title>
 </head>
 <body>
+
+                <!--    ASIDE   -->
+
     <aside class="aside-info">
-        <div class="card">
+        <div class="card aside-info__item">
             <div class="card__shadow-box">
                 <div class="card__card-inner">
                     <a class="card__item _sign-in _hover-bg-darker" href="#">
                         <span class="card__item-icon yandex-item-icon"></span>
                         <span class="card__item-title _center-bold">Войти</span>
                     </a>
-                    <a class="card__item _hover-color-red" href="#">
+                    <a class="card__item hover-red-link" href="#">
                         <span class="card__item-icon ya-mail-item-icon"></span>
                         <span class="card__item-title">Почта</span>
                     </a>
-                    <a class="card__item _hover-color-red" href="#">
+                    <a class="card__item hover-red-link" href="#">
                         <span class="card__item-icon ya-disk-item-icon"></span>
                         <span class="card__item-title">Диск</span>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="card">
+
+        <div class="card aside-info__item">
             <div class="card__shadow-box _hover-offset">
                 <a class="card__item _solo" href="#">
                     <span class="card__item-icon ya-plus-item-icon"></span>
@@ -35,13 +39,17 @@
                 </a>
             </div>
         </div>
+
     </aside>
-    <div class="body-wrapper">
+
+
+
         <div class="rows">
-            <header class="header rows__row">
-                <div class="header__headline headline">
-                    <div class="headline__item headline__left-corner">
-                        <a class="headline__city _hover-color-red" href="#">
+
+            <header class="rows__row">
+                <div class="headline">
+                    <div class="headline__left-corner">
+                        <a class="headline__city hover-red-link" href="#">
                             <svg class="headline__geo-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                 <path fill="currentColor" d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"></path>
                             </svg>
@@ -51,42 +59,43 @@
                         </a>
                         <div class="headline__data-time">27 ноября, суббота 17:42</div>
                     </div>
-                    <div class="headline__item headline__right-corner">
+                    <div class="headline__right-corner">
                         <a class="headline__bar-item ya-cart-icon _hover-increase-opacity"></a>
-                        <a class="headline__bar-item ya-bell-icon _hover-increase-opacity">
-                            <svg class="notifier__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" focusable="false"><path class="notifier__clapper" d="M18 30a3 3 0 0 0 3-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 0 0 3 3z"></path><path class="notifier__bell" d="M15.687 12.5l.3-.164a1.5 1.5 0 0 0 .75-1.021l.142-.712a.75.75 0 0 1 .736-.603h.77a.75.75 0 0 1 .736.603l.142.712a1.5 1.5 0 0 0 .75 1.02l.3.165a5.586 5.586 0 0 1 3.24 4.47l.54 4.863c.1.906.563 1.733 1.282 2.292l.354.275a1.5 1.5 0 0 1 .534 1.548L26.25 26a1.32 1.32 0 0 1-1.28 1H11.03a1.32 1.32 0 0 1-1.28-1l-.013-.052a1.5 1.5 0 0 1 .534-1.548l.354-.275a3.375 3.375 0 0 0 1.282-2.292l.54-4.864a5.586 5.586 0 0 1 3.24-4.469z"></path></svg>
+                        <a class="headline__bar-item _hover-increase-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" focusable="false"><path class="notifier__clapper" d="M18 30a3 3 0 0 0 3-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 0 0 3 3z"></path><path class="notifier__bell" d="M15.687 12.5l.3-.164a1.5 1.5 0 0 0 .75-1.021l.142-.712a.75.75 0 0 1 .736-.603h.77a.75.75 0 0 1 .736.603l.142.712a1.5 1.5 0 0 0 .75 1.02l.3.165a5.586 5.586 0 0 1 3.24 4.47l.54 4.863c.1.906.563 1.733 1.282 2.292l.354.275a1.5 1.5 0 0 1 .534 1.548L26.25 26a1.32 1.32 0 0 1-1.28 1H11.03a1.32 1.32 0 0 1-1.28-1l-.013-.052a1.5 1.5 0 0 1 .534-1.548l.354-.275a3.375 3.375 0 0 0 1.282-2.292l.54-4.864a5.586 5.586 0 0 1 3.24-4.469z"></path></svg>
                         </a>
                     </div>
                 </div>
             </header>
+
             <main class="rows__row main">
                 <div class="main__content main__row">
                     <div class="main__news">
                         <div class="main__titles">
-                            <h1 class="main__title _primary"><a href="#" class="main__title-link _hover-color-red">Сейчас в СМИ</a></h1>
-                            <h1 class="main__title _secondary"><a href="#" class="main__title-link _hover-color-red">в Москве</a></h1>
-                            <span class="main__title _additional"><a href="#" class="main__title-link _hover-color-red">Коронавирус</a></span>
+                            <h1 class="main__title _primary"><a href="#" class="main__title-link hover-red-link">Сейчас в СМИ</a></h1>
+                            <h1 class="main__title _secondary"><a href="#" class="main__title-link hover-red-link">в Москве</a></h1>
+                            <span class="main__title _additional"><a href="#" class="main__title-link hover-red-link">Коронавирус</a></span>
                         </div>
                         <ul class="news-list">
-                            <li class="news-list__item"><a href="#" class="news-list__link _hover-color-red"><span class="news-list__item-icon ya-1-icon"></span><span class="news-list__item-title">Сенатор Владимир Круглый: штамм коронавируса «Омикрон» уже есть в России</span></a></li>
-                            <li class="news-list__item"><a href="#" class="news-list__link _hover-color-red"><span class="news-list__item-icon ya-2-icon"></span><span class="news-list__item-title">Певец и композитор Александр Градский умер на 73-м году жизни</span></a></li>
-                            <li class="news-list__item"><a href="#" class="news-list__link _hover-color-red"><span class="news-list__item-icon ya-3-icon"></span><span class="news-list__item-title">Трем категориям россиян повысят пенсии с 1 декабря</span></a></li>
-                            <li class="news-list__item"><a href="#" class="news-list__link _hover-color-red"><span class="news-list__item-icon ya-4-icon"></span><span class="news-list__item-title">Российские лыжники заняли весь пьедестал почёта в гонке преследования на этапе КМ в Руке</span></a></li>
-                            <li class="news-list__item"><a href="#" class="news-list__link _hover-color-red"><span class="news-list__item-icon ya-2-icon"></span><span class="news-list__item-title">Шиманьски признан лучшим игроком матча «Рубин» — «Динамо»</span></a></li>
+                            <li class="news-list__item"><a href="#" class="news-list__link hover-red-link"><span class="news-list__item-icon ya-1-icon"></span><span class="news-list__item-title">Сенатор Владимир Круглый: штамм коронавируса «Омикрон» уже есть в России</span></a></li>
+                            <li class="news-list__item"><a href="#" class="news-list__link hover-red-link"><span class="news-list__item-icon ya-2-icon"></span><span class="news-list__item-title">Певец и композитор Александр Градский умер на 73-м году жизни</span></a></li>
+                            <li class="news-list__item"><a href="#" class="news-list__link hover-red-link"><span class="news-list__item-icon ya-3-icon"></span><span class="news-list__item-title">Трем категориям россиян повысят пенсии с 1 декабря</span></a></li>
+                            <li class="news-list__item"><a href="#" class="news-list__link hover-red-link"><span class="news-list__item-icon ya-4-icon"></span><span class="news-list__item-title">Российские лыжники заняли весь пьедестал почёта в гонке преследования на этапе КМ в Руке</span></a></li>
+                            <li class="news-list__item"><a href="#" class="news-list__link hover-red-link"><span class="news-list__item-icon ya-2-icon"></span><span class="news-list__item-title">Шиманьски признан лучшим игроком матча «Рубин» — «Динамо»</span></a></li>
                         </ul>
                         <ul class="rates-news">
                             <li class="rates-news-item">
-                                <a href="#" class="currency _hover-color-red">USD</a>
+                                <a href="#" class="currency hover-red-link">USD</a>
                                 <span class="currency-value">74,93</span>
                                 <span class="currency-stock">-0,68</span>
                             </li>
                             <li class="rates-news-item">
-                                <a href="#" class="currency _hover-color-red">EUR</a>
+                                <a href="#" class="currency hover-red-link">EUR</a>
                                 <span class="currency-value">84,61</span>
                                 <span class="currency-stock">-0,89</span>
                             </li>
                             <li class="rates-news-item">
-                                <a href="#" class="currency _hover-color-red">НЕФТЬ</a>
+                                <a href="#" class="currency hover-red-link">НЕФТЬ</a>
                                 <span class="currency-value">74,72</span>
                                 <span class="currency-stock">+3,12%</span>
                             </li>
@@ -95,26 +104,26 @@
                     <div class="widgets">
                         <div class="widgets__weather">
                             <div class="main__titles">
-                                <h1 class="main__title _primary"><a href="#" class="main__title-link _hover-color-red">Погода</a></h1>
-                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link _hover-color-red">Карта осадков</a></span>
+                                <h1 class="main__title _primary"><a href="#" class="main__title-link hover-red-link">Погода</a></h1>
+                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link hover-red-link">Карта осадков</a></span>
                             </div>
                             <div class="main__weather-content">
-                                <a href="#" class="main__weather-link _big _hover-color-red">
+                                <a href="#" class="main__weather-link _big hover-red-link">
                                     <div class="main__weather-icon _big"></div>
                                     <div class="main__weather-value">+2°</div>
                                 </a>
                                 <div class="main__weather-forecast">
-                                    <a href="#" class="main__weather-link _hover-color-red">
+                                    <a href="#" class="main__weather-link hover-red-link">
                                         <span class="main__weather-time">Утром</span>
                                         <span class="main__weather-icon"></span>
                                         <span class="main__weather-value">3°</span>
                                     </a>
-                                    <a href="#" class="main__weather-link _hover-color-red">
+                                    <a href="#" class="main__weather-link hover-red-link">
                                         <span class="main__weather-time">Днём</span>
                                         <span class="main__weather-icon"></span>
                                         <span class="main__weather-value">4°</span>
                                     </a>
-                                    <a href="#" class="main__weather-link _hover-color-red">
+                                    <a href="#" class="main__weather-link hover-red-link">
                                         <span class="main__weather-time">Вечером</span>
                                         <span class="main__weather-icon"></span>
                                         <span class="main__weather-value">4°</span>
@@ -124,18 +133,18 @@
                         </div>
                         <div class="widgets__transport">
                             <div class="main__titles">
-                                <h1 class="main__title _primary"><a href="#" class="main__title-link _hover-color-red">Пробки</a></h1>
-                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link _hover-color-red">Метро</a></span>
-                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link _hover-color-red">Расписания</a></span>
-                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link _hover-color-red">Такси</a></span>
+                                <h1 class="main__title _primary"><a href="#" class="main__title-link hover-red-link">Пробки</a></h1>
+                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link hover-red-link">Метро</a></span>
+                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link hover-red-link">Расписания</a></span>
+                                <span class="main__title _additional _color-blue"><a href="#" class="main__title-link hover-red-link">Такси</a></span>
                             </div>
                             <div class="widgets__transport-traffic">
-                                <a class="widgets__transport-visual _hover-color-red" href="#">
+                                <a class="widgets__transport-visual hover-red-link" href="#">
                                     <span class="widgets__transport-icon"></span>
                                     <span class="widgets__transport-value">0</span>
                                 </a>
                                 <div class="widgets__transport-text">
-                                    <a href="#" class="widgets__transport-link _hover-color-red">
+                                    <a href="#" class="widgets__transport-link hover-red-link">
                                         На дорогах свободно
                                     </a>
                                 </div>
@@ -207,15 +216,18 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="main__search main__row search">
-                    <div class="yandex-logo"></div>
+
+                <!--      SEARCH       -->
+
+                <div class="main__row search">
+                    <div class="search__yandex-logo"></div>
                     <div class="search__field">
                         <button class="search__button">Найти</button>
                         <input type="text" class="search__input" placeholder="Найдётся всё">
                     </div>
                 </div>
+
             </main>
         </div>
-    </div>
 </body>
 </html>
