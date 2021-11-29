@@ -571,12 +571,14 @@ body {
 }
 
 .search__button {
+    font-size: 0.9em;
+    font-weight: 500;
     cursor: pointer;
     border-radius: 9px;
     position: absolute;
-    height: 36px;
-    top: 2.5px;
-    right: 5px;
+    height: 34px;
+    top: 3.5px;
+    right: 6px;
     z-index: 10;
     width: 78px;
     background-color: #ffcc00;
