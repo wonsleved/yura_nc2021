@@ -1,0 +1,76 @@
+.sm-footer {
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+
+
+  &__actions {
+    display: flex;
+  }
+
+  &__action {
+    border: none;
+    outline: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color .2s ease;
+    cursor: pointer;
+
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+
+    &:hover {
+      transition: background-color .2s ease;
+      background-color: #f2f2f2;
+    }
+  }
+
+  &__action > svg {
+    fill: rgba(0,0,0,.8);
+    display: block;
+  }
+
+  &__comments {
+    height: 36px;
+    border-radius: 24px;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    transition: background-color .2s ease;
+    cursor: pointer;
+    padding: 0 12px 0 8px;
+
+    &:hover {
+      transition: background-color .2s ease;
+      background-color: #f2f2f2;
+
+      & .sm-footer__comments-icon {
+        border: 2px solid #f2f2f2;
+
+      }
+    }
+  }
+
+  &__comments-total-number {
+    font-weight: 600;
+  }
+
+  &comments-icons {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 14px;
+  }
+
+  &__comments-icon {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: -7px;
+    background-image: url("https://avatars.mds.yandex.net/get-zen-logos/212539/pub_60267bda289db64e7439f5b4_6034e427084cc34524010ea4/36x36_2x");
+    background-size: cover;
+  }
+}
