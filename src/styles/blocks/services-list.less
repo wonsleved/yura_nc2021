@@ -1,0 +1,41 @@
+.services-list {
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+
+  &__service-icon {
+    width: 44px;
+    height: 44px;
+    display: block;
+    margin: 0 auto 2px;
+    transition: 0.15s ease-out;
+  }
+
+  &__service {
+    flex: 1 1 10%;
+  }
+
+  &__service-link {
+    display: block;
+    min-width: 90px;
+    transition: all 0.15s ease-out;
+
+    &._hover-up-red:hover {
+      color: #cc0000;
+
+      &.services-list__service-icon {
+        transform: translateY(-4px);
+        transition: 0.15s ease-out;
+      }
+    }
+  }
+
+  &__service-name {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+  }
+}
