@@ -1,11 +1,17 @@
 .page {
   background-color: #fefefe;
   min-height: 100vh;
+  min-width: 335px;
 
   &__header {
     background-image: linear-gradient(to bottom, #fefefe, #f9f9f8);
     position: relative;
     padding-bottom: 16px;
+  }
+
+  &__footer {
+    position: fixed;
+    bottom: 0;
   }
 
   &__aside-content {
@@ -18,6 +24,7 @@
     box-sizing: content-box;
     margin: 0 auto;
     padding-right: 17px;
+    padding-left: 20px;
     width: 941px;
 
     @media (max-width: 1400px) {
@@ -28,7 +35,7 @@
       width: 758px;
     }
 
-    @media (max-width: 990px) {
+    @media (max-width: 1040px) {
       padding-right: 0;
     }
 
@@ -40,7 +47,7 @@
   &__main {
     box-sizing: content-box;
     height: 100%;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
     background-image: linear-gradient(to bottom, #f9f9f8 10%, #f3f3f2);
   }
 }

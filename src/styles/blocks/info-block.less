@@ -40,4 +40,30 @@
     position: relative;
     padding-top: 18px;
   }
+
+  &__options {
+    margin-left: auto;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+
+
+  }
+
+  &:hover {
+    & .info-block__options {
+      opacity: 0.6;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+
+    }
+  }
+
 }
