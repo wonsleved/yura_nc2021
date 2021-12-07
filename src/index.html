@@ -33,7 +33,7 @@
 
         <div class="aside__content-card content-card shadow-box _hover-offset">
           <a class="content-card__item _thick-paddings">
-            <span class="content-card__item-icon ya-plus-item-icon"></span>
+            <span class="content-card__item-icon ya-plus-item-icon content-card__item-plus-icon"></span>
             <span class="content-card__item-title">Попробовать Плюс</span>
           </a>
         </div>
@@ -55,12 +55,12 @@
                   d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"
                 ></path>
               </svg>
-              <span class="headline__city-name"> Москва </span>
+              <span class="headline__city-name">Москва</span>
             </a>
             <div class="headline__data-time">27 ноября, суббота 17:42</div>
           </div>
           <div class="headline__right-corner">
-            <a class="headline__bar-item ya-cart-icon _hover-increase-opacity"></a>
+            <a class="headline__bar-item headline__bar-item-cart ya-cart-icon _hover-increase-opacity"></a>
             <a class="headline__bar-item _hover-increase-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" focusable="false">
                 <path
@@ -132,25 +132,27 @@
 
             <li class="services-list__service">
               <a href="#" class="services-list__service-link _hover-up-red">
-                <span class="services-list__service-icon ya-etc-icon"></span>
-                <span class="services-list__service-name">ещё</span>
+                <span class="services-list__service-icon ya-tv-program-icon"></span>
+                <span class="services-list__service-name">Программа</span>
               </a>
             </li>
 
             <li class="services-list__service">
               <a href="#" class="services-list__service-link _hover-up-red">
-                <span class="services-list__service-icon ya-etc-icon"></span>
-                <span class="services-list__service-name">ещё</span>
-              </a>
-            </li>
-
-            <li class="services-list__service">
-              <a href="#" class="services-list__service-link _hover-up-red">
-                <span class="services-list__service-icon ya-etc-icon"></span>
-                <span class="services-list__service-name">ещё</span>
+                <span class="services-list__service-icon ya-avto-ru-icon"></span>
+                <span class="services-list__service-name">Авто.ру</span>
               </a>
             </li>
           </ul>
+          <a href="#" class="services-content__more-services more-services _hover-up-red">
+            <div class="more-services__etc">
+              <div class="more-services__etc-service etc-icon-1"></div>
+              <div class="more-services__etc-service etc-icon-2"></div>
+              <div class="more-services__etc-service etc-icon-3"></div>
+              <div class="more-services__etc-service etc-icon-4"></div>
+            </div>
+            <span class="more-services__text">ещё</span>
+          </a>
         </nav>
 
         <form class="page__center search">
@@ -166,7 +168,6 @@
 
       <main class="main page__main">
         <div class="main-wrapper page__center">
-
           <section class="main-wrapper__main-content main-content plates">
             <div class="plates__plate">
               <div class="info-block">
@@ -233,11 +234,11 @@
 
             <div class="plates__plate sm-content">
               <header class="sm-header">
-                <a href="#" class="sm-channel-icon"></a>
+                <a href="#" class="sm-channel-icon sm-header__channel-icon"></a>
 
                 <div class="sm-header__info">
                   <div class="sm-header__channel">
-                    <a href="#" class="sm-header__channel-name"> Рисунки Левши </a>
+                    <a href="#" class="sm-header__channel-name"> Мультфильмы </a>
                     <span>•</span>
                     <button class="sm-header__button subscribe-button">Подписаться</button>
                   </div>
@@ -248,14 +249,18 @@
 
               <div class="sm-main">
                 <a href="#" class="sm-main__content">
-                  <video loop controls class="sm-main__content-video" muted autoplay>
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                  <video poster="https://i.ytimg.com/vi/aqz-KE-bpKQ/maxresdefault.jpg"
+                         loop controls class="sm-main__content-video" muted autoplay>
+                    <source
+                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                      type="video/mp4"
+                    />
                   </video>
                 </a>
 
                 <div class="sm-main__info">
                   <a href="#" class="sm-main__title">
-                    Пришла зима - рисуем ёлки)) Отличный вариант для развития мелкой моторики
+                    Big Buck Bunny - смотреть анимационный мультфильм онлайн в хорошем качестве без смс и регистрации
                   </a>
                   <a href="#" class="sm-main__additional-info">
                     <div class="sm-main__date">12 часов назад</div>
@@ -277,9 +282,9 @@
                   </div>
                 </a>
                 <div class="sm-footer__actions">
-                  <button class="sm-footer__action like-action"></button>
-                  <button class="sm-footer__action dislike-action"></button>
-                  <button class="sm-footer__action share-action"></button>
+                  <button class="sm-footer__action like-icon"></button>
+                  <button class="sm-footer__action dislike-icon"></button>
+                  <button class="sm-footer__action share-icon"></button>
                 </div>
               </footer>
             </div>
@@ -288,7 +293,7 @@
                 <a href="#" class="sm-channel-icon"></a>
                 <div class="sm-header__info">
                   <div class="sm-header__channel">
-                    <a href="#" class="sm-header__channel-name"> Рисунки Левши </a>
+                    <a href="#" class="sm-header__channel-name"> Мультфильмы </a>
                     <span>•</span>
 
                     <button class="sm-header__button subscribe-button">Подписаться</button>
@@ -300,14 +305,18 @@
 
               <div class="sm-main">
                 <a href="#" class="sm-main__content">
-                  <video loop controls class="sm-main__content-video" muted autoplay>
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                  <video poster="https://i.ytimg.com/vi/aqz-KE-bpKQ/maxresdefault.jpg"
+                         loop controls class="sm-main__content-video" muted autoplay>
+                    <source
+                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                      type="video/mp4"
+                    />
                   </video>
                 </a>
 
                 <div class="sm-main__info">
                   <a href="#" class="sm-main__title">
-                    Пришла зима - рисуем ёлки)) Отличный вариант для развития мелкой моторики
+                    Big Buck Bunny - смотреть анимационный мультфильм онлайн в хорошем качестве без смс и регистрации
                   </a>
                   <a href="#" class="sm-main__additional-info">
                     <div class="sm-main__date">12 часов назад</div>
@@ -329,9 +338,9 @@
                   </div>
                 </a>
                 <div class="sm-footer__actions">
-                  <button class="sm-footer__action like-action"></button>
-                  <button class="sm-footer__action dislike-action"></button>
-                  <button class="sm-footer__action share-action"></button>
+                  <button class="sm-footer__action like-icon"></button>
+                  <button class="sm-footer__action dislike-icon"></button>
+                  <button class="sm-footer__action share-icon"></button>
                 </div>
               </footer>
             </div>
@@ -340,7 +349,7 @@
                 <a href="#" class="sm-channel-icon"></a>
                 <div class="sm-header__info">
                   <div class="sm-header__channel">
-                    <a href="#" class="sm-header__channel-name"> Рисунки Левши </a>
+                    <a href="#" class="sm-header__channel-name"> Мультфильмы </a>
                     <span>•</span>
 
                     <button class="sm-header__button subscribe-button">Подписаться</button>
@@ -352,15 +361,18 @@
 
               <div class="sm-main">
                 <a href="#" class="sm-main__content">
-                  <video loop controls class="sm-main__content-video" muted autoplay>
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                  <video poster="https://i.ytimg.com/vi/aqz-KE-bpKQ/maxresdefault.jpg"
+                         loop controls class="sm-main__content-video" muted autoplay>
+                    <source
+                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                      type="video/mp4"
+                    />
                   </video>
                 </a>
 
-
                 <div class="sm-main__info">
                   <a href="#" class="sm-main__title">
-                    Пришла зима - рисуем ёлки)) Отличный вариант для развития мелкой моторики
+                    Big Buck Bunny - смотреть анимационный мультфильм онлайн в хорошем качестве без смс и регистрации
                   </a>
                   <a href="#" class="sm-main__additional-info">
                     <div class="sm-main__date">12 часов назад</div>
@@ -382,9 +394,9 @@
                   </div>
                 </a>
                 <div class="sm-footer__actions">
-                  <button class="sm-footer__action like-action"></button>
-                  <button class="sm-footer__action dislike-action"></button>
-                  <button class="sm-footer__action share-action"></button>
+                  <button class="sm-footer__action like-icon"></button>
+                  <button class="sm-footer__action dislike-icon"></button>
+                  <button class="sm-footer__action share-icon"></button>
                 </div>
               </footer>
             </div>
@@ -405,8 +417,8 @@
 
                 <div class="widget-content">
                   <a href="#" class="widget-content__info hover-color-red">
-                    <div class="widget-content-picture weather-picture"></div>
-                    <div class="widget-content-value">−1°</div>
+                    <div class="widget-content__picture widget-content__weather-picture weather-picture"></div>
+                    <div class="widget-content__value">−1°</div>
                   </a>
                   <div class="widget-content__weather-forecast">
                     <a href="#" class="hover-color-red">ночью −1°</a>
@@ -430,8 +442,8 @@
 
                 <div class="widget-content">
                   <a href="#" class="widget-content__info hover-color-red">
-                    <div class="widget-content-picture traffic-picture"></div>
-                    <div class="widget-content-value">4</div>
+                    <div class="widget-content__picture widget-content__traffic-picture traffic-picture"></div>
+                    <div class="widget-content__value">4</div>
                   </a>
                   <div class="widget-content__traffic-forecast">
                     <div class="widget-content__traffic-block">
@@ -534,63 +546,52 @@
         </div>
       </main>
 
-
       <footer class="footer page__footer">
         <nav class="footer__left-corner">
           <ul class="footer__links-list">
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                Директ
-              </a>
+              <a href="#" class="footer__link hover-color-red"> Директ </a>
             </li>
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                Метрика
-              </a>
+              <a href="#" class="footer__link hover-color-red"> Метрика </a>
             </li>
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                Реклама
-              </a>
+              <a href="#" class="footer__link hover-color-red"> Реклама </a>
             </li>
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                Вакансии
-              </a>
+              <a href="#" class="footer__link hover-color-red"> Вакансии </a>
             </li>
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                Блог
-              </a>
+              <a href="#" class="footer__link hover-color-red"> Блог </a>
             </li>
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                Компания
-              </a>
+              <a href="#" class="footer__link hover-color-red"> Компания </a>
             </li>
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                About
-              </a>
+              <a href="#" class="footer__link hover-color-red"> About </a>
             </li>
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                Конфиденциальность
-              </a>
+              <a href="#" class="footer__link hover-color-red"> Конфиденциальность </a>
             </li>
             <li class="footer__links-item">
-              <a href="#" class="footer__link hover-color-red">
-                Пользовательское соглашение
+              <a href="#" class="footer__link hover-color-red"> Пользовательское соглашение </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link">
+                <svg aria-hidden="true" width="19" height="19" viewBox="0 0 19 19">
+                  <path
+                    d="M9.5 2a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15m0-1a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17z M9 11.7v-.3c0-.5 0-.9.2-1.2a2.7 2.7 0 0 1 .4-.7l.9-.8c.3-.4.6-.6.7-.9l.2-.6c0-.5-.2-.9-.5-1.2a1.8 1.8 0 0 0-1.3-.5c-.5 0-.9.1-1.2.4-.3.4-.6.8-.7 1.5l-1.1-.2a3 3 0 0 1 1-2 3 3 0 0 1 2-.7c.9 0 1.6.3 2.2.8s.8 1 .8 1.8c0 .4-.1.8-.3 1.1l-1.1 1.2-.7.8c-.2.1-.2.3-.3.5v1H9zM9 14v-1.3h1.2V14H9z"
+                  ></path>
+                </svg>
               </a>
             </li>
             <li class="footer__links-item">
               <a href="#" class="footer__link">
-                <svg aria-hidden="true" width="19" height="19" viewBox="0 0 19 19"><path class="media-infinity-footer__icon-path" d="M9.5 2a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15m0-1a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17z M9 11.7v-.3c0-.5 0-.9.2-1.2a2.7 2.7 0 0 1 .4-.7l.9-.8c.3-.4.6-.6.7-.9l.2-.6c0-.5-.2-.9-.5-1.2a1.8 1.8 0 0 0-1.3-.5c-.5 0-.9.1-1.2.4-.3.4-.6.8-.7 1.5l-1.1-.2a3 3 0 0 1 1-2 3 3 0 0 1 2-.7c.9 0 1.6.3 2.2.8s.8 1 .8 1.8c0 .4-.1.8-.3 1.1l-1.1 1.2-.7.8c-.2.1-.2.3-.3.5v1H9zM9 14v-1.3h1.2V14H9z"></path></svg>
-              </a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">
-                <svg aria-hidden="true" width="19" height="19" viewBox="0 0 19 19"><path class="media-infinity-footer__icon-path" d="M1 3v12h17V3H1zm15.154 1L9.5 8.88 2.846 4h13.308zM2 14V4.62l7.5 5.5 7.5-5.5V14H2z"></path></svg>
+                <svg aria-hidden="true" width="19" height="19" viewBox="0 0 19 19">
+                  <path
+                    d="M1 3v12h17V3H1zm15.154 1L9.5 8.88 2.846 4h13.308zM2 14V4.62l7.5 5.5 7.5-5.5V14H2z"
+                  ></path>
+                </svg>
               </a>
             </li>
           </ul>
@@ -598,13 +599,9 @@
 
         <div class="footer__right-corner">
           <a href="#" class="footer__settings hover-color-red">Настройки</a>
-          <a href="#" class="hover-color-red">© Яндекс</a>
+          <span>© Яндекс</span>
         </div>
-
-
       </footer>
-
-
     </div>
   </body>
 </html>

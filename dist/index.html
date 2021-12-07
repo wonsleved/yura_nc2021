@@ -1,557 +1,607 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link href="./styles/index.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link href="./styles/index.css" rel="stylesheet" type="text/css" />
     <title>Yandex</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="page">
+      <aside class="aside page__aside-content">
+        <div class="aside__content-card content-card shadow-box">
+          <div class="content-card__inner">
+            <a class="content-card__item content-card__sign-in-button sign-in-button">
+              <span class="sign-in-button-icon"></span>
+              <span class="sign-in-button__text">Войти</span>
+            </a>
 
-        <aside class="aside page__aside-content">
+            <a class="content-card__item hover-color-red">
+              <span class="content-card__item-icon ya-mail-item-icon"></span>
+              <span class="content-card__item-title">Почта</span>
+            </a>
 
-            <div class="aside__content-card content-card shadow-box _z-index-2">
-                <div class="content-card__inner">
-                    <a class="content-card__item content-card__sign-in-button sign-in-button">
-                        <span class="sign-in-button-icon"></span>
-                        <span class="sign-in-button__text">Войти</span>
-                    </a>
+            <a class="content-card__item hover-color-red">
+              <span class="content-card__item-icon ya-disk-item-icon"></span>
+              <span class="content-card__item-title">Диск</span>
+            </a>
+          </div>
+        </div>
 
-                    <a class="content-card__item hover-color-red">
-                        <span class="content-card__item-icon ya-mail-item-icon"></span>
-                        <span class="content-card__item-title">Почта</span>
-                    </a>
+        <div class="aside__content-card content-card shadow-box _hover-offset">
+          <a class="content-card__item _thick-paddings">
+            <span class="content-card__item-icon ya-plus-item-icon content-card__item-plus-icon"></span>
+            <span class="content-card__item-title">Попробовать Плюс</span>
+          </a>
+        </div>
+      </aside>
 
-                    <a class="content-card__item hover-color-red">
-                        <span class="content-card__item-icon ya-disk-item-icon"></span>
-                        <span class="content-card__item-title">Диск</span>
-                    </a>
-                </div>
+      <header class="header page__header">
+        <div class="headline">
+          <div class="headline__left-corner">
+            <a class="headline__city hover-color-red" href="#">
+              <svg
+                class="headline__geo-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"
+                ></path>
+              </svg>
+              <span class="headline__city-name">Москва</span>
+            </a>
+            <div class="headline__data-time">27 ноября, суббота 17:42</div>
+          </div>
+          <div class="headline__right-corner">
+            <a class="headline__bar-item headline__bar-item-cart ya-cart-icon _hover-increase-opacity"></a>
+            <a class="headline__bar-item _hover-increase-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" focusable="false">
+                <path
+                  class="notifier__clapper"
+                  d="M18 30a3 3 0 0 0 3-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 0 0 3 3z"
+                ></path>
+                <path
+                  class="notifier__bell"
+                  d="M15.687 12.5l.3-.164a1.5 1.5 0 0 0 .75-1.021l.142-.712a.75.75 0 0 1 .736-.603h.77a.75.75 0 0 1 .736.603l.142.712a1.5 1.5 0 0 0 .75 1.02l.3.165a5.586 5.586 0 0 1 3.24 4.47l.54 4.863c.1.906.563 1.733 1.282 2.292l.354.275a1.5 1.5 0 0 1 .534 1.548L26.25 26a1.32 1.32 0 0 1-1.28 1H11.03a1.32 1.32 0 0 1-1.28-1l-.013-.052a1.5 1.5 0 0 1 .534-1.548l.354-.275a3.375 3.375 0 0 0 1.282-2.292l.54-4.864a5.586 5.586 0 0 1 3.24-4.469z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="services-content page__center">
+          <ul class="services-content__services-list services-list">
+            <li class="services-list__service">
+              <a
+                href="#"
+                class="services-list__service-link main__services-link-first _hover-up-red"
+              >
+                <span class="services-list__service-icon ya-market-icon"></span>
+                <span class="services-list__service-name">Маркет</span>
+              </a>
+            </li>
+
+            <li class="services-list__service">
+              <a href="#" class="services-list__service-link _hover-up-red">
+                <span class="services-list__service-icon ya-video-icon"></span>
+                <span class="services-list__service-name">Видео</span>
+              </a>
+            </li>
+
+            <li class="services-list__service">
+              <a href="#" class="services-list__service-link _hover-up-red">
+                <span class="services-list__service-icon ya-pictures-icon"></span>
+                <span class="services-list__service-name">Картинки</span>
+              </a>
+            </li>
+
+            <li class="services-list__service">
+              <a href="#" class="services-list__service-link _hover-up-red">
+                <span class="services-list__service-icon ya-news-icon"></span>
+                <span class="services-list__service-name">Новости</span>
+              </a>
+            </li>
+
+            <li class="services-list__service">
+              <a href="#" class="services-list__service-link _hover-up-red">
+                <span class="services-list__service-icon ya-maps-icon"></span>
+                <span class="services-list__service-name">Карты</span>
+              </a>
+            </li>
+
+            <li class="services-list__service">
+              <a href="#" class="services-list__service-link _hover-up-red">
+                <span class="services-list__service-icon ya-translate-icon"></span>
+                <span class="services-list__service-name">Переводчик</span>
+              </a>
+            </li>
+
+            <li class="services-list__service">
+              <a href="#" class="services-list__service-link _hover-up-red">
+                <span class="services-list__service-icon ya-music-icon"></span>
+                <span class="services-list__service-name">Музыка</span>
+              </a>
+            </li>
+
+            <li class="services-list__service">
+              <a href="#" class="services-list__service-link _hover-up-red">
+                <span class="services-list__service-icon ya-tv-program-icon"></span>
+                <span class="services-list__service-name">Программа</span>
+              </a>
+            </li>
+
+            <li class="services-list__service">
+              <a href="#" class="services-list__service-link _hover-up-red">
+                <span class="services-list__service-icon ya-avto-ru-icon"></span>
+                <span class="services-list__service-name">Авто.ру</span>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="services-content__more-services more-services _hover-up-red">
+            <div class="more-services__etc">
+              <div class="more-services__etc-service etc-icon-1"></div>
+              <div class="more-services__etc-service etc-icon-2"></div>
+              <div class="more-services__etc-service etc-icon-3"></div>
+              <div class="more-services__etc-service etc-icon-4"></div>
             </div>
+            <span class="more-services__text">ещё</span>
+          </a>
+        </nav>
 
-            <div class="aside__content-card content-card shadow-box _z-index-1 _hover-offset">
-                <a class="content-card__item _thick-paddings">
-                    <span class="content-card__item-icon ya-plus-item-icon"></span>
-                    <span class="content-card__item-title">Попробовать Плюс</span>
-                </a>
-            </div>
+        <form class="page__center search">
+          <a class="search__yandex-logo" href="index.html" target="_self"></a>
+          <div class="search__field">
+            <button class="search__button">Найти</button>
+            <button class="search__voice voice-search-icon"></button>
+            <button class="search__keyboard keyboard-icon"></button>
+            <input type="text" class="search__input" placeholder="Найдётся всё" />
+          </div>
+        </form>
+      </header>
 
-        </aside>
+      <main class="main page__main">
+        <div class="main-wrapper page__center">
+          <section class="main-wrapper__main-content main-content plates">
+            <div class="plates__plate">
+              <div class="info-block">
+                <header class="info-block__header">
+                  <div class="info-block__header-icon ya-news-main-icon"></div>
+                  <h1 class="info-block__header-title">
+                    <a href="#" class="hover-color-red">Сейчас в СМИ</a>
+                  </h1>
+                  <h1 class="info-block__header-title _color-gray">
+                    <a href="#" class="hover-color-red">в Мосвке</a>
+                  </h1>
+                  <h1 class="info-block__header-title _color-orange">
+                    <a href="#" class="hover-color-red">Коронавирус</a>
+                  </h1>
+                  <button class="info-block__options options-icon"></button>
+                </header>
 
-        <header class="header page__header _z-index-999">
-
-            <div class="headline">
-                <div class="headline__left-corner">
-                    <a class="headline__city hover-color-red" href="#">
-                        <svg class="headline__geo-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                            <path fill="currentColor" d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"></path>
-                        </svg>
-                        <span class="headline__city-name">
-                                Москва
-                            </span>
-                    </a>
-                    <div class="headline__data-time">27 ноября, суббота 17:42</div>
-                </div>
-                <div class="headline__right-corner">
-                    <a class="headline__bar-item ya-cart-icon _hover-increase-opacity"></a>
-                    <a class="headline__bar-item _hover-increase-opacity">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" focusable="false"><path class="notifier__clapper" d="M18 30a3 3 0 0 0 3-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 0 0 3 3z"></path><path class="notifier__bell" d="M15.687 12.5l.3-.164a1.5 1.5 0 0 0 .75-1.021l.142-.712a.75.75 0 0 1 .736-.603h.77a.75.75 0 0 1 .736.603l.142.712a1.5 1.5 0 0 0 .75 1.02l.3.165a5.586 5.586 0 0 1 3.24 4.47l.54 4.863c.1.906.563 1.733 1.282 2.292l.354.275a1.5 1.5 0 0 1 .534 1.548L26.25 26a1.32 1.32 0 0 1-1.28 1H11.03a1.32 1.32 0 0 1-1.28-1l-.013-.052a1.5 1.5 0 0 1 .534-1.548l.354-.275a3.375 3.375 0 0 0 1.282-2.292l.54-4.864a5.586 5.586 0 0 1 3.24-4.469z"></path></svg>
-                    </a>
-                </div>
-            </div>
-
-            <nav class="services-content page__center">
-                <ul class="services-content__services-list services-list">
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link main__services-link-first _hover-up-red">
-                            <span class="services-list__service-icon ya-market-icon"></span>
-                            <span class="services-list__service-name">Маркет</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-video-icon"></span>
-                            <span class="services-list__service-name">Видео</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-pictures-icon"></span>
-                            <span class="services-list__service-name">Картинки</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-news-icon"></span>
-                            <span class="services-list__service-name">Новости</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-maps-icon"></span>
-                            <span class="services-list__service-name">Карты</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-translate-icon"></span>
-                            <span class="services-list__service-name">Переводчик</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-music-icon"></span>
-                            <span class="services-list__service-name">Музыка</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-etc-icon"></span>
-                            <span class="services-list__service-name">ещё</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-etc-icon"></span>
-                            <span class="services-list__service-name">ещё</span>
-                        </a>
-                    </li>
-
-                    <li class="services-list__service">
-                        <a href="" class="services-list__service-link _hover-up-red">
-                            <span class="services-list__service-icon ya-etc-icon"></span>
-                            <span class="services-list__service-name">ещё</span>
-                        </a>
-                    </li>
-
+                <ul class="news-list">
+                  <li class="news-list__item">
+                    <a href="#" class="hover-color-red"
+                      ><span class="news-list__item-icon ya-1-icon"></span
+                      ><span class="news-list__item-title"
+                        >Сенатор Владимир Круглый: штамм коронавируса «Омикрон» уже есть в
+                        России</span
+                      ></a
+                    >
+                  </li>
+                  <li class="news-list__item">
+                    <a href="#" class="hover-color-red"
+                      ><span class="news-list__item-icon ya-2-icon"></span
+                      ><span class="news-list__item-title"
+                        >Певец и композитор Александр Градский умер на 73-м году жизни</span
+                      ></a
+                    >
+                  </li>
+                  <li class="news-list__item">
+                    <a href="#" class="hover-color-red"
+                      ><span class="news-list__item-icon ya-3-icon"></span
+                      ><span class="news-list__item-title"
+                        >Трем категориям россиян повысят пенсии с 1 декабря</span
+                      ></a
+                    >
+                  </li>
+                  <li class="news-list__item">
+                    <a href="#" class="hover-color-red"
+                      ><span class="news-list__item-icon ya-4-icon"></span
+                      ><span class="news-list__item-title"
+                        >Российские лыжники заняли весь пьедестал почёта в гонке преследования на
+                        этапе КМ в Руке</span
+                      ></a
+                    >
+                  </li>
+                  <li class="news-list__item">
+                    <a href="#" class="hover-color-red"
+                      ><span class="news-list__item-icon ya-2-icon"></span
+                      ><span class="news-list__item-title"
+                        >Шиманьски признан лучшим игроком матча «Рубин» — «Динамо»</span
+                      ></a
+                    >
+                  </li>
                 </ul>
-            </nav>
-
-            <form class="page__center search">
-                <a class="search__yandex-logo" href="index.html" target="_self"></a>
-                <div class="search__field">
-                    <button class="search__button">Найти</button>
-                    <input type="text" class="search__input" placeholder="Найдётся всё">
-                </div>
-            </form>
-
-        </header>
-
-        <main class="main page__main">
-            <div class="main-wrapper page__center">
-                <section class="main-wrapper__main-content main-content plates">
-                    <div class="plate">
-                        <div class="plate__inner info-block">
-                            <header class="info-block__header">
-                                <div class="info-block__header-icon ya-news-main-icon"></div>
-                                <h1 class="info-block__header-title">
-                                    <a href="#" class="hover-color-red">Сейчас в СМИ</a>
-                                </h1>
-                                <h1 class="info-block__header-title _color-gray">
-                                    <a href="#" class="hover-color-red">в Мосвке</a>
-                                </h1>
-                                <h1 class="info-block__header-title _color-orange">
-                                    <a href="#" class="hover-color-red">Коронавирус</a>
-                                </h1>
-                            </header>
-
-                            <ul class="news-list">
-                                <li class="news-list__item"><a href="#" class="hover-color-red"><span class="news-list__item-icon ya-1-icon"></span><span class="news-list__item-title">Сенатор Владимир Круглый: штамм коронавируса «Омикрон» уже есть в России</span></a></li>
-                                <li class="news-list__item"><a href="#" class="hover-color-red"><span class="news-list__item-icon ya-2-icon"></span><span class="news-list__item-title">Певец и композитор Александр Градский умер на 73-м году жизни</span></a></li>
-                                <li class="news-list__item"><a href="#" class="hover-color-red"><span class="news-list__item-icon ya-3-icon"></span><span class="news-list__item-title">Трем категориям россиян повысят пенсии с 1 декабря</span></a></li>
-                                <li class="news-list__item"><a href="#" class="hover-color-red"><span class="news-list__item-icon ya-4-icon"></span><span class="news-list__item-title">Российские лыжники заняли весь пьедестал почёта в гонке преследования на этапе КМ в Руке</span></a></li>
-                                <li class="news-list__item"><a href="#" class="hover-color-red"><span class="news-list__item-icon ya-2-icon"></span><span class="news-list__item-title">Шиманьски признан лучшим игроком матча «Рубин» — «Динамо»</span></a></li>
-                            </ul>
-
-
-
-                        </div>
-                    </div>
-
-                    <div class="plate sm-content">
-                        <header class="sm-header">
-                            <a href="#" class="sm-channel-icon"></a>
-                            <div class="sm-header__info">
-                                <div class="sm-header__channel">
-                                    <a href="#" class="sm-header__channel-name">
-                                        Рисунки Левши
-                                    </a>
-                                    <span>•</span>
-
-                                    <button class="sm-header__button subscribe-button">Подписаться</button>
-                                </div>
-                                <a href="#" class="sm-header__channel-subs">
-                                    9 тыс. подписчиков
-                                </a>
-                            </div>
-                        </header>
-
-                        <div class="sm-main-content">
-
-                            <a href="#" class="sm-main__content">
-
-                            </a>
-
-                            <div class="sm-main-content__info">
-                                <a href="#" class="sm-main-content__title">
-                                    Пришла зима - рисуем ёлки)) Отличный вариант для развития мелкой моторики
-                                </a>
-                                <a href="#" class="sm-main-content__additional-info">
-                                    <div class="sm-main-content__date">12 часов назад</div>
-                                    <span> • </span>
-                                    <div class="sm-main-content__views">29 921 просмотров</div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <footer class="sm-footer">
-                            <a class="sm-footer__comments">
-                                <div class="sm-footer__comments-icons">
-                                    <div class="sm-footer__comments-icon"></div>
-                                    <div class="sm-footer__comments-icon"></div>
-                                </div>
-                                <div class="sm-footer__comments-total">
-                                    <span class="sm-footer__comments-total-number">28</span>
-                                    <span>комментариев</span>
-                                </div>
-
-
-                            </a>
-                            <div class="sm-footer__actions">
-                                <button class="sm-footer__action like-action">
-                                </button>
-                                <button class="sm-footer__action dislike-action">
-                                </button>
-                                <button class="sm-footer__action share-action"></button>
-                            </div>
-                        </footer>
-                    </div>
-                    <div class="plate sm-content">
-                        <header class="sm-header">
-                            <a href="#" class="sm-channel-icon"></a>
-                            <div class="sm-header__info">
-                                <div class="sm-header__channel">
-                                    <a href="#" class="sm-header__channel-name">
-                                        Рисунки Левши
-                                    </a>
-                                    <span>•</span>
-
-                                    <button class="sm-header__button subscribe-button">Подписаться</button>
-                                </div>
-                                <a href="#" class="sm-header__channel-subs">
-                                    9 тыс. подписчиков
-                                </a>
-                            </div>
-                        </header>
-
-                        <div class="sm-main-content">
-
-                            <a href="#" class="sm-main__content">
-
-                            </a>
-
-                            <div class="sm-main-content__info">
-                                <a href="#" class="sm-main-content__title">
-                                    Пришла зима - рисуем ёлки)) Отличный вариант для развития мелкой моторики
-                                </a>
-                                <a href="#" class="sm-main-content__additional-info">
-                                    <div class="sm-main-content__date">12 часов назад</div>
-                                    <span> • </span>
-                                    <div class="sm-main-content__views">29 921 просмотров</div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <footer class="sm-footer">
-                            <a class="sm-footer__comments">
-                                <div class="sm-footer__comments-icons">
-                                    <div class="sm-footer__comments-icon"></div>
-                                    <div class="sm-footer__comments-icon"></div>
-                                </div>
-                                <div class="sm-footer__comments-total">
-                                    <span class="sm-footer__comments-total-number">28</span>
-                                    <span>комментариев</span>
-                                </div>
-
-
-                            </a>
-                            <div class="sm-footer__actions">
-                                <button class="sm-footer__action like-action">
-                                </button>
-                                <button class="sm-footer__action dislike-action">
-                                </button>
-                                <button class="sm-footer__action share-action"></button>
-                            </div>
-                        </footer>
-                    </div>
-                    <div class="plate sm-content">
-                        <header class="sm-header">
-                            <a href="#" class="sm-channel-icon"></a>
-                            <div class="sm-header__info">
-                                <div class="sm-header__channel">
-                                    <a href="#" class="sm-header__channel-name">
-                                        Рисунки Левши
-                                    </a>
-                                    <span>•</span>
-
-                                    <button class="sm-header__button subscribe-button">Подписаться</button>
-                                </div>
-                                <a href="#" class="sm-header__channel-subs">
-                                    9 тыс. подписчиков
-                                </a>
-                            </div>
-                        </header>
-
-                        <div class="sm-main-content">
-
-                            <a href="#" class="sm-main__content">
-
-                            </a>
-
-                            <div class="sm-main-content__info">
-                                <a href="#" class="sm-main-content__title">
-                                    Пришла зима - рисуем ёлки)) Отличный вариант для развития мелкой моторики
-                                </a>
-                                <a href="#" class="sm-main-content__additional-info">
-                                    <div class="sm-main-content__date">12 часов назад</div>
-                                    <span> • </span>
-                                    <div class="sm-main-content__views">29 921 просмотров</div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <footer class="sm-footer">
-                            <a class="sm-footer__comments">
-                                <div class="sm-footer__comments-icons">
-                                    <div class="sm-footer__comments-icon"></div>
-                                    <div class="sm-footer__comments-icon"></div>
-                                </div>
-                                <div class="sm-footer__comments-total">
-                                    <span class="sm-footer__comments-total-number">28</span>
-                                    <span>комментариев</span>
-                                </div>
-
-
-                            </a>
-                            <div class="sm-footer__actions">
-                                <button class="sm-footer__action like-action">
-                                </button>
-                                <button class="sm-footer__action dislike-action">
-                                </button>
-                                <button class="sm-footer__action share-action"></button>
-                            </div>
-                        </footer>
-                    </div>
-
-
-                </section>
-
-                <aside class="widgets plates">
-                    <div class="plate">
-                        <div class="plate__inner info-block ">
-                            <header class="info-block__header">
-                                <h1 class="info-block__header-title">
-                                    <a href="#" class="hover-color-red">Погода</a>
-                                </h1>
-                                <h1 class="info-block__header-title _color-gray">
-                                    <a href="#" class="hover-color-red">Карта осадков</a>
-                                </h1>
-                            </header>
-
-                            <div class="widget-content">
-                                <a href="" class="widget-content__info hover-color-red">
-                                    <div class="widget-content-picture weather-picture"></div>
-                                    <div class="widget-content-value">−1°</div>
-                                </a>
-                                <div class="widget-content__weather-forecast">
-                                    <a href="#" class="hover-color-red">ночью −1°</a>
-                                    <a href="#" class="hover-color-red">утром +3°</a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="plate__inner info-block ">
-                            <header class="info-block__header">
-                                <h1 class="info-block__header-title">
-                                    <a href="#" class="hover-color-red">Пробки</a>
-                                </h1>
-                                <h1 class="info-block__header-title _color-gray">
-                                    <a href="#" class="hover-color-red">Метро</a>
-                                </h1>
-                                <h1 class="info-block__header-title _color-gray">
-                                    <a href="#" class="hover-color-red">Расписания</a>
-                                </h1>
-                            </header>
-
-                            <div class="widget-content">
-                                <a href="" class="widget-content__info hover-color-red">
-                                    <div class="widget-content-picture traffic-picture"></div>
-                                    <div class="widget-content-value">4</div>
-                                </a>
-                                <div class="widget-content__traffic-forecast">
-                                    <div class="widget-content__traffic-block">
-                                        <div class="widget-content__traffic-time">22ч</div>
-                                        <div class="widget-content__traffic-count">2</div>
-                                    </div>
-
-                                    <div class="widget-content__traffic-block">
-                                        <div class="widget-content__traffic-time">23</div>
-                                        <div class="widget-content__traffic-count">1</div>
-                                    </div>
-
-                                    <div class="widget-content__traffic-block">
-                                        <div class="widget-content__traffic-time">24</div>
-                                        <div class="widget-content__traffic-count">0</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="plate">
-                        <div class="plate__inner info-block">
-                            <header class="info-block__header">
-                                <h1 class="info-block__header-title">
-                                    <a href="#" class="hover-color-red">Котировки</a>
-                                </h1>
-                            </header>
-
-                            <div class="info-block__stocks stocks">
-                                <a class="stocks__item hover-color-red">
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            USD ЦБ
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            3 декабря
-                                        </div>
-                                    </div>
-                                    <div class="stocks-graph">
-                                        <div class="stocks-graph__image"></div>
-                                    </div>
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            74,06 ₽
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            +0,09
-                                        </div>
-                                    </div>
-
-                                </a>
-                                <a class="stocks__item hover-color-red">
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            USD ЦБ
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            3 декабря
-                                        </div>
-                                    </div>
-                                    <div class="stocks-graph">
-                                        <div class="stocks-graph__image"></div>
-                                    </div>
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            74,06 ₽
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            +0,09
-                                        </div>
-                                    </div>
-
-                                </a>
-                                <a class="stocks__item hover-color-red">
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            USD ЦБ
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            3 декабря
-                                        </div>
-                                    </div>
-                                    <div class="stocks-graph">
-                                        <div class="stocks-graph__image"></div>
-                                    </div>
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            74,06 ₽
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            +0,09
-                                        </div>
-                                    </div>
-
-                                </a>
-                                <a class="stocks__item hover-color-red">
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            USD ЦБ
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            3 декабря
-                                        </div>
-                                    </div>
-                                    <div class="stocks-graph">
-                                        <div class="stocks-graph__image"></div>
-                                    </div>
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            74,06 ₽
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            +0,09
-                                        </div>
-                                    </div>
-
-                                </a>
-                                <a class="stocks__item hover-color-red">
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            USD ЦБ
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            3 декабря
-                                        </div>
-                                    </div>
-                                    <div class="stocks-graph">
-                                        <div class="stocks-graph__image"></div>
-                                    </div>
-                                    <div class="stocks-block">
-                                        <div class="stocks-block__main">
-                                            74,06 ₽
-                                        </div>
-                                        <div class="stocks-block__additional">
-                                            +0,09
-                                        </div>
-                                    </div>
-
-                                </a>
-
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </aside>
+              </div>
             </div>
-        </main>
 
+            <div class="plates__plate sm-content">
+              <header class="sm-header">
+                <a href="#" class="sm-channel-icon sm-header__channel-icon"></a>
 
+                <div class="sm-header__info">
+                  <div class="sm-header__channel">
+                    <a href="#" class="sm-header__channel-name"> Мультфильмы </a>
+                    <span>•</span>
+                    <button class="sm-header__button subscribe-button">Подписаться</button>
+                  </div>
+                  <a href="#" class="sm-header__channel-subs"> 9 тыс. подписчиков </a>
+                </div>
+                <button class="sm-header__options options-icon"></button>
+              </header>
 
+              <div class="sm-main">
+                <a href="#" class="sm-main__content">
+                  <video poster="https://i.ytimg.com/vi/aqz-KE-bpKQ/maxresdefault.jpg"
+                         loop controls class="sm-main__content-video" muted autoplay>
+                    <source
+                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </a>
+
+                <div class="sm-main__info">
+                  <a href="#" class="sm-main__title">
+                    Big Buck Bunny - смотреть анимационный мультфильм онлайн в хорошем качестве без смс и регистрации
+                  </a>
+                  <a href="#" class="sm-main__additional-info">
+                    <div class="sm-main__date">12 часов назад</div>
+                    <span> • </span>
+                    <div class="sm-main__views">29 921 просмотров</div>
+                  </a>
+                </div>
+              </div>
+
+              <footer class="sm-footer">
+                <a class="sm-footer__comments">
+                  <div class="sm-footer__comments-icons">
+                    <div class="sm-footer__comments-icon"></div>
+                    <div class="sm-footer__comments-icon"></div>
+                  </div>
+                  <div class="sm-footer__comments-total">
+                    <span class="sm-footer__comments-total-number">28</span>
+                    <span>комментариев</span>
+                  </div>
+                </a>
+                <div class="sm-footer__actions">
+                  <button class="sm-footer__action like-icon"></button>
+                  <button class="sm-footer__action dislike-icon"></button>
+                  <button class="sm-footer__action share-icon"></button>
+                </div>
+              </footer>
+            </div>
+            <div class="plates__plate sm-content">
+              <header class="sm-header">
+                <a href="#" class="sm-channel-icon"></a>
+                <div class="sm-header__info">
+                  <div class="sm-header__channel">
+                    <a href="#" class="sm-header__channel-name"> Мультфильмы </a>
+                    <span>•</span>
+
+                    <button class="sm-header__button subscribe-button">Подписаться</button>
+                  </div>
+                  <a href="#" class="sm-header__channel-subs"> 9 тыс. подписчиков </a>
+                </div>
+                <button class="sm-header__options options-icon"></button>
+              </header>
+
+              <div class="sm-main">
+                <a href="#" class="sm-main__content">
+                  <video poster="https://i.ytimg.com/vi/aqz-KE-bpKQ/maxresdefault.jpg"
+                         loop controls class="sm-main__content-video" muted autoplay>
+                    <source
+                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </a>
+
+                <div class="sm-main__info">
+                  <a href="#" class="sm-main__title">
+                    Big Buck Bunny - смотреть анимационный мультфильм онлайн в хорошем качестве без смс и регистрации
+                  </a>
+                  <a href="#" class="sm-main__additional-info">
+                    <div class="sm-main__date">12 часов назад</div>
+                    <span> • </span>
+                    <div class="sm-main__views">29 921 просмотров</div>
+                  </a>
+                </div>
+              </div>
+
+              <footer class="sm-footer">
+                <a class="sm-footer__comments">
+                  <div class="sm-footer__comments-icons">
+                    <div class="sm-footer__comments-icon"></div>
+                    <div class="sm-footer__comments-icon"></div>
+                  </div>
+                  <div class="sm-footer__comments-total">
+                    <span class="sm-footer__comments-total-number">28</span>
+                    <span>комментариев</span>
+                  </div>
+                </a>
+                <div class="sm-footer__actions">
+                  <button class="sm-footer__action like-icon"></button>
+                  <button class="sm-footer__action dislike-icon"></button>
+                  <button class="sm-footer__action share-icon"></button>
+                </div>
+              </footer>
+            </div>
+            <div class="plates__plate sm-content">
+              <header class="sm-header">
+                <a href="#" class="sm-channel-icon"></a>
+                <div class="sm-header__info">
+                  <div class="sm-header__channel">
+                    <a href="#" class="sm-header__channel-name"> Мультфильмы </a>
+                    <span>•</span>
+
+                    <button class="sm-header__button subscribe-button">Подписаться</button>
+                  </div>
+                  <a href="#" class="sm-header__channel-subs"> 9 тыс. подписчиков </a>
+                </div>
+                <button class="sm-header__options options-icon"></button>
+              </header>
+
+              <div class="sm-main">
+                <a href="#" class="sm-main__content">
+                  <video poster="https://i.ytimg.com/vi/aqz-KE-bpKQ/maxresdefault.jpg"
+                         loop controls class="sm-main__content-video" muted autoplay>
+                    <source
+                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </a>
+
+                <div class="sm-main__info">
+                  <a href="#" class="sm-main__title">
+                    Big Buck Bunny - смотреть анимационный мультфильм онлайн в хорошем качестве без смс и регистрации
+                  </a>
+                  <a href="#" class="sm-main__additional-info">
+                    <div class="sm-main__date">12 часов назад</div>
+                    <span> • </span>
+                    <div class="sm-main__views">29 921 просмотров</div>
+                  </a>
+                </div>
+              </div>
+
+              <footer class="sm-footer">
+                <a class="sm-footer__comments">
+                  <div class="sm-footer__comments-icons">
+                    <div class="sm-footer__comments-icon"></div>
+                    <div class="sm-footer__comments-icon"></div>
+                  </div>
+                  <div class="sm-footer__comments-total">
+                    <span class="sm-footer__comments-total-number">28</span>
+                    <span>комментариев</span>
+                  </div>
+                </a>
+                <div class="sm-footer__actions">
+                  <button class="sm-footer__action like-icon"></button>
+                  <button class="sm-footer__action dislike-icon"></button>
+                  <button class="sm-footer__action share-icon"></button>
+                </div>
+              </footer>
+            </div>
+          </section>
+
+          <section class="widgets plates">
+            <div class="plates__plate">
+              <div class="info-block">
+                <header class="info-block__header">
+                  <h1 class="info-block__header-title">
+                    <a href="#" class="hover-color-red">Погода</a>
+                  </h1>
+                  <h1 class="info-block__header-title _color-gray">
+                    <a href="#" class="hover-color-red">Карта осадков</a>
+                  </h1>
+                  <button class="info-block__options options-icon"></button>
+                </header>
+
+                <div class="widget-content">
+                  <a href="#" class="widget-content__info hover-color-red">
+                    <div class="widget-content__picture widget-content__weather-picture weather-picture"></div>
+                    <div class="widget-content__value">−1°</div>
+                  </a>
+                  <div class="widget-content__weather-forecast">
+                    <a href="#" class="hover-color-red">ночью −1°</a>
+                    <a href="#" class="hover-color-red">утром +3°</a>
+                  </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <header class="info-block__header">
+                  <h1 class="info-block__header-title">
+                    <a href="#" class="hover-color-red">Пробки</a>
+                  </h1>
+                  <h1 class="info-block__header-title _color-gray">
+                    <a href="#" class="hover-color-red">Метро</a>
+                  </h1>
+                  <h1 class="info-block__header-title _color-gray">
+                    <a href="#" class="hover-color-red">Расписания</a>
+                  </h1>
+                  <button class="info-block__options options-icon"></button>
+                </header>
+
+                <div class="widget-content">
+                  <a href="#" class="widget-content__info hover-color-red">
+                    <div class="widget-content__picture widget-content__traffic-picture traffic-picture"></div>
+                    <div class="widget-content__value">4</div>
+                  </a>
+                  <div class="widget-content__traffic-forecast">
+                    <div class="widget-content__traffic-block">
+                      <div class="widget-content__traffic-time">22ч</div>
+                      <div class="widget-content__traffic-count">2</div>
+                    </div>
+
+                    <div class="widget-content__traffic-block">
+                      <div class="widget-content__traffic-time">23</div>
+                      <div class="widget-content__traffic-count">1</div>
+                    </div>
+
+                    <div class="widget-content__traffic-block">
+                      <div class="widget-content__traffic-time">24</div>
+                      <div class="widget-content__traffic-count">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plates__plate">
+              <div class="info-block">
+                <header class="info-block__header">
+                  <h1 class="info-block__header-title">
+                    <a href="#" class="hover-color-red">Котировки</a>
+                  </h1>
+                  <button class="info-block__options options-icon"></button>
+                </header>
+
+                <div class="info-block__stocks stocks">
+                  <a class="stocks__item hover-color-red">
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">USD ЦБ</div>
+                      <div class="stocks-block__additional">3 декабря</div>
+                    </div>
+                    <div class="stocks-graph">
+                      <div class="stocks-graph__image"></div>
+                    </div>
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">74,06 ₽</div>
+                      <div class="stocks-block__additional">+0,09</div>
+                    </div>
+                  </a>
+                  <a class="stocks__item hover-color-red">
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">USD ЦБ</div>
+                      <div class="stocks-block__additional">3 декабря</div>
+                    </div>
+                    <div class="stocks-graph">
+                      <div class="stocks-graph__image"></div>
+                    </div>
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">74,06 ₽</div>
+                      <div class="stocks-block__additional">+0,09</div>
+                    </div>
+                  </a>
+                  <a class="stocks__item hover-color-red">
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">USD ЦБ</div>
+                      <div class="stocks-block__additional">3 декабря</div>
+                    </div>
+                    <div class="stocks-graph">
+                      <div class="stocks-graph__image"></div>
+                    </div>
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">74,06 ₽</div>
+                      <div class="stocks-block__additional">+0,09</div>
+                    </div>
+                  </a>
+                  <a class="stocks__item hover-color-red">
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">USD ЦБ</div>
+                      <div class="stocks-block__additional">3 декабря</div>
+                    </div>
+                    <div class="stocks-graph">
+                      <div class="stocks-graph__image"></div>
+                    </div>
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">74,06 ₽</div>
+                      <div class="stocks-block__additional">+0,09</div>
+                    </div>
+                  </a>
+                  <a class="stocks__item hover-color-red">
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">USD ЦБ</div>
+                      <div class="stocks-block__additional">3 декабря</div>
+                    </div>
+                    <div class="stocks-graph">
+                      <div class="stocks-graph__image"></div>
+                    </div>
+                    <div class="stocks-block">
+                      <div class="stocks-block__main">74,06 ₽</div>
+                      <div class="stocks-block__additional">+0,09</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer page__footer">
+        <nav class="footer__left-corner">
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> Директ </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> Метрика </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> Реклама </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> Вакансии </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> Блог </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> Компания </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> About </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> Конфиденциальность </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link hover-color-red"> Пользовательское соглашение </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link">
+                <svg aria-hidden="true" width="19" height="19" viewBox="0 0 19 19">
+                  <path
+                    d="M9.5 2a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15m0-1a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17z M9 11.7v-.3c0-.5 0-.9.2-1.2a2.7 2.7 0 0 1 .4-.7l.9-.8c.3-.4.6-.6.7-.9l.2-.6c0-.5-.2-.9-.5-1.2a1.8 1.8 0 0 0-1.3-.5c-.5 0-.9.1-1.2.4-.3.4-.6.8-.7 1.5l-1.1-.2a3 3 0 0 1 1-2 3 3 0 0 1 2-.7c.9 0 1.6.3 2.2.8s.8 1 .8 1.8c0 .4-.1.8-.3 1.1l-1.1 1.2-.7.8c-.2.1-.2.3-.3.5v1H9zM9 14v-1.3h1.2V14H9z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__link">
+                <svg aria-hidden="true" width="19" height="19" viewBox="0 0 19 19">
+                  <path
+                    d="M1 3v12h17V3H1zm15.154 1L9.5 8.88 2.846 4h13.308zM2 14V4.62l7.5 5.5 7.5-5.5V14H2z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__right-corner">
+          <a href="#" class="footer__settings hover-color-red">Настройки</a>
+          <span>© Яндекс</span>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

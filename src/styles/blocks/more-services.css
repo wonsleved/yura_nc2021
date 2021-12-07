@@ -1,0 +1,19 @@
+.more-services {
+  display: block;
+  min-width: 90px;
+  transition: all 0.15s ease-out;
+}
+.more-services._hover-up-red:hover {
+  color: #cc0000;
+}
+.more-services._hover-up-red:hover .services-list__service-icon {
+  transform: translateY(-4px);
+  transition: 0.15s ease-out;
+}
+.more-services__text {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+}
+/*# sourceMappingURL=more-services.css.map */
