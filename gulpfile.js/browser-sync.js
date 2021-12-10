@@ -15,8 +15,8 @@ function browserSync() {
         }
     });
 
-    gulp.watch(paths.bsyncPaths.styles, gulp.series('compile-less') );
-    gulp.watch(paths.bsyncPaths.html, gulp.series('copy-html') );
+    gulp.watch(paths.bsyncPaths.styles, gulp.series('compile-less') ).on('change', bsync.reload);
+    gulp.watch(paths.bsyncPaths.html, gulp.series('copy-html') ).on('change', bsync.reload);
 };
 
 module.exports = browserSync;

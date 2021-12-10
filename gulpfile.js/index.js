@@ -6,6 +6,7 @@ const mode = require('gulp-mode')({
     default: "development",
     verbose: false
 });
+const prettier = require('./prettier');
 
 
 const isProduction = mode.production();
@@ -14,6 +15,6 @@ const isProduction = mode.production();
 if (isProduction) {
     task('default', prodTask);
 } else {
-    task('default', browserSync);
+    task('default', series(browserSync));
 }
 
