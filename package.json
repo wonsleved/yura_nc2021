@@ -23,6 +23,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
+    "gulp-cached": "^1.1.1",
     "gulp-less": "^5.0.0",
     "gulp-mode": "^1.1.0",
     "gulp-prettier": "^4.0.0",

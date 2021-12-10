@@ -1,6 +1,6 @@
 const paths = {
-    baseDir: './dist',
-    srcDir: '/src',
+    baseDir: './dist/',
+    srcDir: '/src/',
     styles: {
         src: './src/styles/index.less',
         dest: './dist/styles/'
