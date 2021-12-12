@@ -10,6 +10,377 @@
     <title>Mail.ru: почта, поиск в интернете, новости, игры</title>
   </head>
   <body>
-    <div class="page">aaabbaaaaba aejbabss aefojani akeof</div>
+    <div class="page">
+      <header class="page__header headline">
+        <ul class="services-list">
+          <li class="services-list__item">Mail.ru</li>
+          <li class="services-list__item">Почта</li>
+          <li class="services-list__item">Мой Мир</li>
+          <li class="services-list__item">Одноклассники</li>
+          <li class="services-list__item">ВКонтакте</li>
+          <li class="services-list__item">Игры</li>
+          <li class="services-list__item">Знакомства</li>
+          <li class="services-list__item">Новости</li>
+          <li class="services-list__item">Поиск</li>
+          <li class="services-list__item">Облако</li>
+          <li class="services-list__item">VK Работа</li>
+          <li class="services-list__item">VK Combo</li>
+          <li class="services-list__item">Все Проекты <span class="all-projects-icon"></span></li>
+        </ul>
+
+        <div class="authorizeButtons">
+          <a class="sign-up-button authorizeButtons__button">Регистрация</a>
+          <a class="sign-in-button authorizeButtons__button">Войти</a>
+        </div>
+      </header>
+
+      <main class="main page__main">
+        <div class="grid-content">
+          <section class="grid-content__widgets">
+            <div class="plate">
+              <div class="authorize-block">
+                <div class="authorize-block__cap"></div>
+                <div class="authorize-block__content">
+                  <div class="authorize-block__mail-head mail-head">
+                    <a class="mail-head__mail">Почта</a>
+                    <div class="mail-head__icons icons-row">
+                      <a href="#" class="icons-row__icon">
+                        <svg height="16" width="16" aria-hidden="true">
+                          <use xlink:href="/re/i/sprite-42eb38e9.svg#camera"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="icons-row__icon">
+                        <svg class="icons-row__icon" height="16" width="16" aria-hidden="true">
+                          <use xlink:href="/re/i/sprite-42eb38e9.svg#cloud"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="icons-row__icon">
+                        <svg class="icons-row__icon" height="16" width="16" aria-hidden="true">
+                          <use xlink:href="/re/i/sprite-42eb38e9.svg#calendar_alt"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <form action="#" class="authorize-form authorize-block__form">
+                    <div class="email-input-box">
+                      <input type="text" class="email-input-box__name" />
+                      <select name="domain" class="email-input-box__domain">
+                        <option value="mail.ru" selected>mail.ru</option>
+                        <option value="inbox.ru">inbox.ru</option>
+                        <option value="list.ru">list.ru</option>
+                        <option value="bk.ru">bk.ru</option>
+                        <option value="internet.ru">internet.ru</option>
+                      </select>
+                    </div>
+                    <button class="enter-password-button authorize-form__button">
+                      <span class="enter-password-button__text">Ввести пароль</span>
+                      <svg
+                        class="icon-next svelte-1da0ifw"
+                        height="16"
+                        width="16"
+                        aria-hidden="true"
+                      >
+                        <use xlink:href="/re/i/sprite-42eb38e9.svg#arrow_next"></use>
+                      </svg>
+                    </button>
+                    <div class="authorize-form__additional-options">
+                      <div class="authorize-form__remember-option">
+                        <input type="checkbox" id="remember-me-option" />
+                        <label for="remember-me-option">Запомнить меня</label>
+                      </div>
+                      <a class="authorize-form__forgot-pass-option"> Забыли пароль? </a>
+                    </div>
+                  </form>
+
+                  <div class="authorize-block__another-auth-ways">
+                    <button class="create-email-button">Создать почту</button>
+                    <button class="vk-id-login-button">
+                      <span class="vk-id-icon vk-id-login-button__icon"></span>
+                      <span class="vk-id-login-button__text">Войти через VK ID</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="plate">
+              <div class="weather-widget">
+                <header class="weather-widget__header">
+                  <a class="weather-widget__city-name">Москва</a>
+                  <a class="weather-widget__detailed">Поробнее</a>
+                </header>
+                <a href="#" class="weather-widget__weather-now weather-now">
+                  <div class="weather-now__pic weather-widget__pic"></div>
+                  <div class="weather-now__temperature">-10°</div>
+                  <div class="weather-now__text">
+                    <div class="weather-now__description">Пасмурно</div>
+                    <div class="weather-now__additional-description">Влажность 92%</div>
+                  </div>
+                </a>
+                <a href="#" class="weather-widget__weather-forecast weather-forecast">
+                  <div class="weather-forecast__block">
+                    <div class="weather-forecast__time">Ночью</div>
+                    <div class="weather-forecast__weather">
+                      <div class="weather-forecast__pic"></div>
+                      <div class="weather-forecast__temperature">-6°</div>
+                    </div>
+                  </div>
+
+                  <div class="weather-forecast__block">
+                    <div class="weather-forecast__time">Утром</div>
+                    <div class="weather-forecast__weather">
+                      <div class="weather-forecast__pic"></div>
+                      <div class="weather-forecast__temperature">-4°</div>
+                    </div>
+                  </div>
+
+                  <div class="weather-forecast__block">
+                    <div class="weather-forecast__time">Днём</div>
+                    <div class="weather-forecast__weather">
+                      <div class="weather-forecast__pic"></div>
+                      <div class="weather-forecast__temperature">-2°</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="plate">
+              <div class="stocks-widget">
+                <a class="rate">
+                  <i class="rate__icon rate-dollar-icon"></i>
+                  <div class="rate__currency">
+                    <span class="rate__currency-now">73.61</span>
+                    <span class="rate__currency-diff _green">
+                      +0.01
+                      <svg
+                        height="11px"
+                        width="11px"
+                        class="rate__currency-diff-icon"
+                        aria-hidden="true"
+                      >
+                        <use xlink:href="/re/i/sprite-42eb38e9.svg#drop_up_small"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+
+                <a class="rate">
+                  <i class="rate__icon rate-euro-icon"></i>
+                  <div class="rate__currency">
+                    <span class="rate__currency-now">83.12</span>
+                    <span class="rate__currency-diff _red">
+                      -0.23
+                      <svg
+                        height="11px"
+                        width="11px"
+                        class="rate__currency-diff-icon"
+                        aria-hidden="true"
+                      >
+                        <use xlink:href="/re/i/sprite-42eb38e9.svg#drop_down_small"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+
+                <a class="rate">
+                  <i class="rate__icon rate-oil-icon"></i>
+                  <div class="rate__currency">
+                    <span class="rate__currency-now">75.38</span>
+                    <span class="rate__currency-diff _green">
+                      +1.25
+                      <svg
+                        height="11px"
+                        width="11px"
+                        class="rate__currency-diff-icon"
+                        aria-hidden="true"
+                      >
+                        <use xlink:href="/re/i/sprite-42eb38e9.svg#drop_up_small"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="plate">
+              <div class="covid-widget">
+                <a href="#" class="covid-widget__head">
+                  <span class="covid-widget__title">Коронавирус COVID-19</span>
+                  <span class="covid-widget__current-info">Новые случаи 7 марта</span>
+                </a>
+
+                <a href="#" class="covid-widget__content covid-content">
+                  <div class="covid-content__area">
+                    <span class="covid-content__current-region"></span>
+                    <span class="covid-content__current-country"></span>
+                    <span class="covid-content__current-world"></span>
+                  </div>
+
+                  <div class="covid-content__chart"></div>
+                  <div class="covid-content__period">
+                    <span class="covid-content__left-mark">Март</span>
+                    <span class="covid-content__right-mark">Декабрь</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="plate">
+              <a href="#" class="widget-info horoscope-widget">
+                <div class="widget-info__icon"></div>
+                <div class="widget-info__text">
+                  <div class="widget-info__title">Гороскоп: Рыбы</div>
+                  <div class="widget-info__description">
+                    День новых планов, неожиданных оригинальных идей, которые...
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="plate">
+              <div class="games-widget">
+                <div class="games-widget__header games-widget__game">
+                  <a href="#" class="widget-info">
+                    <div class="widget-info__icon"></div>
+                    <div class="widget-info__text">
+                      <div class="widget-info__title">Игры</div>
+                      <div class="widget-info__description">На любой вкус</div>
+                    </div>
+                  </a>
+                </div>
+
+                <ul class="games-widget__list">
+                  <li class="games-widget__game">
+                    <a href="#" class="widget-info">
+                      <div class="widget-info__icon"></div>
+                      <div class="widget-info__text">
+                        <div class="widget-info__title">ArcheAge</div>
+                        <div class="widget-info__description">MMORPG</div>
+                      </div>
+                      <div class="play-button"></div>
+                    </a>
+                  </li>
+                  <li class="games-widget__game">
+                    <a href="#" class="widget-info">
+                      <div class="widget-info__icon"></div>
+                      <div class="widget-info__text">
+                        <div class="widget-info__title">Гильдия Героев</div>
+                        <div class="widget-info__description">MMORPG</div>
+                      </div>
+                      <div class="play-button"></div>
+                    </a>
+                  </li>
+                  <li class="games-widget__game">
+                    <a href="#" class="widget-info">
+                      <div class="widget-info__icon"></div>
+                      <div class="widget-info__text">
+                        <div class="widget-info__title">Hustle Castle</div>
+                        <div class="widget-info__description">MMORPG</div>
+                      </div>
+                      <div class="play-button"></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="services-list">
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">VK Работа</div>
+                    <div class="widget-info__description">Найди работу за 24 часа</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">Одноклассники</div>
+                    <div class="widget-info__description">Подарки на любой вкус</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">ВКонтакте</div>
+                    <div class="widget-info__description">Вы могли пропустить</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">Облако</div>
+                    <div class="widget-info__description">Сохраните фотографии</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">ТВ-Программа</div>
+                    <div class="widget-info__description">Что смотреть сегодня</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">VK Combo</div>
+                    <div class="widget-info__description">Музыка и скидки</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">Юла</div>
+                    <div class="widget-info__description">Бесплатные объявления</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">AliExpress Россия</div>
+                    <div class="widget-info__description">Гигантский выбор и скидки</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">GeekBrains</div>
+                    <div class="widget-info__description">Онлайн-университет</div>
+                  </div>
+                </a>
+              </li>
+              <li class="plate services-list__item">
+                <a href="#" class="widget-info">
+                  <div class="widget-info__icon"></div>
+                  <div class="widget-info__text">
+                    <div class="widget-info__title">Курсы Skillbox</div>
+                    <div class="widget-info__description">С трудоустройством</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="grid-content__main-content"></section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
