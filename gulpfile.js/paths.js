@@ -12,6 +12,10 @@ const paths = {
     bsyncPaths: {
         styles: './src/**/*.less',
         html: './src/*.html'
+    },
+    svg: {
+        src: './src/svg/*.svg',
+        dest: './dist'
     }
 }
 
