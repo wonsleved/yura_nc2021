@@ -12,6 +12,8 @@
   &__text {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
   }
 
   &__title {
@@ -22,7 +24,9 @@
   &__description {
     font-size: 13px;
     line-height: 20px;
-
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     color: #919399;
   }
 }
