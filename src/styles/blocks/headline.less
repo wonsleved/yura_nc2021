@@ -1,0 +1,55 @@
+.headline {
+  background-color: #111;
+  background-image: paint(fleck);
+  border-bottom: 1px solid #676767;
+  display: flex;
+  padding: 0 3rem;
+
+  align-items: center;
+
+  &__logo-star {
+    display: block;
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 0 .5rem 0 0;
+  }
+
+  &__logo-text {
+    display: block;
+    fill: #fff;
+    height: 25px;
+    width: 170px;
+  }
+
+  &__logo {
+    margin-right: 3rem;
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__nav-list {
+    display: flex;
+  }
+
+  &__link {
+    display: block;
+    padding: 1.2rem 1rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: .8rem;
+    &:hover {
+      color: #ff7a18;
+      background: hsla(0,0%,100%,.1);
+    }
+  }
+
+  &__fixed-icons {
+    position: fixed;
+    z-index: 99;
+    top: 0.9rem;
+    right: 3rem;
+  }
+}
