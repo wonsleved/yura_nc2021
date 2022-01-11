@@ -1,0 +1,37 @@
+.sidebar-card {
+  background-color: #fff;
+  width: 300px;
+  padding: 0.5rem;
+  border-radius: 8px;
+
+  &__img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 0 1.5rem rgba(17,17,17,.7);
+    transition: .15s;
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &__illustration-link:hover &__img {
+    box-shadow: 0 0 50px rgba(17,17,17,.5);
+    transform: rotate(-2deg) translateY(-5px) scale(1.025);
+  }
+
+  &__sponsor {
+    color: #0089c7;
+    display: block;
+    text-transform: uppercase;
+    font-size: .5rem;
+    letter-spacing: .05rem;
+  }
+
+  &__info {
+    color: #434343;
+    display: block;
+    font-size: 0.75rem;
+  }
+}
