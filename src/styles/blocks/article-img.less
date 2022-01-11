@@ -1,0 +1,45 @@
+.article-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  & img {
+    position: absolute;
+    max-width: none;
+    width: 120%;
+    height: 100%;
+  }
+
+  & a {
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 75%;
+      z-index: 3;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,
+      hsla(0,0%,100%,.013) 8.1%,hsla(0,0%,100%,.049) 15.5%,
+      hsla(0,0%,100%,.104) 22.5%,hsla(0,0%,100%,.175) 29%,
+      hsla(0,0%,100%,.259) 35.3%,hsla(0,0%,100%,.352) 41.2%,
+      hsla(0,0%,100%,.45) 47.1%,hsla(0,0%,100%,.55) 52.9%,
+      hsla(0,0%,100%,.648) 58.8%,hsla(0,0%,100%,.741) 64.7%,
+      hsla(0,0%,100%,.825) 71%,hsla(0,0%,100%,.896) 77.5%,
+      hsla(0,0%,100%,.951) 84.5%,hsla(0,0%,100%,.987) 91.9%,#fff);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+      mix-blend-mode: screen;
+      opacity: .75;
+      width: 120%;
+      min-height: 500px;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+}

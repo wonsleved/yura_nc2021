@@ -1,0 +1,45 @@
+.article-compilation-articles {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 1rem;
+  padding: 3rem 0 3rem 2rem;
+  border-radius: 10px;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    transition: .2s;
+
+    &:not(:first-child) {
+      margin-left: -130px;
+    }
+
+    &:not(:last-child) {
+      box-shadow: -3rem 0 3rem -2rem #000;
+      &:hover {
+      margin-right: 130px;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-1rem) rotate(3deg);
+    }
+  }
+}
