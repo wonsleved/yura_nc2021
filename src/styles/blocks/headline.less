@@ -1,11 +1,16 @@
 .headline {
   background-color: #111;
-  background-image: paint(fleck);
+  //background-image: paint(fleck);
   border-bottom: 1px solid #676767;
   display: flex;
-  padding: 0 3rem;
-
+  padding: 0 var(--gap);
   align-items: center;
+  width: 100%;
+
+  @media (max-width: 1000px) {
+    padding: 20px 20px 0;
+    flex-wrap: wrap;
+  }
 
   &__logo-star {
     display: block;
@@ -13,6 +18,12 @@
     width: 25px;
     height: 25px;
     margin: 0 .5rem 0 0;
+    animation: spinMe 1s forwards;
+
+    @media (max-width: 1000px) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__logo-text {
@@ -20,36 +31,69 @@
     fill: #fff;
     height: 25px;
     width: 170px;
+
+    @media (max-width: 1000px) {
+      height: 15px;
+      width: 116px;
+    }
   }
 
   &__logo {
-    margin-right: 3rem;
+    margin-right: var(--gap);
   }
 
   &__logo-link {
     display: flex;
+    align-items: center;
   }
 
   &__nav-list {
     display: flex;
+
+    @media (max-width: 1000px) {
+      padding-top: 10px;
+      -webkit-margin-start: -10px;
+      margin-inline-start: -10px;
+    }
   }
 
   &__link {
+    font-family: 'MD Primer Bold', sans-serif;
     display: block;
     padding: 1.2rem 1rem;
     color: #fff;
     font-weight: 800;
     font-size: .8rem;
+    text-transform: uppercase;
     &:hover {
       color: #ff7a18;
       background: hsla(0,0%,100%,.1);
     }
+
+    @media (max-width: 1000px) {
+      padding: 0.6rem 0.8rem;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+
   }
 
   &__fixed-icons {
     position: fixed;
     z-index: 99;
     top: 0.9rem;
-    right: 3rem;
+    right: var(--gap);
+  }
+
+  &__navbar {
+    @media (max-width: 1000px) {
+      flex: 0 0 100%;
+    }
+
+    @media (max-width: 620px) {
+      width: calc(100% + var(--gap)*2);
+      overflow: auto;
+    }
+
   }
 }

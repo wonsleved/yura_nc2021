@@ -11,21 +11,25 @@
   z-index: 0;
 
   &__header {
-    margin-bottom: 3rem;
+    margin-bottom: var(--gap);
   }
 
   &__main {
-    padding: 0 3rem;
-    max-width: 1600px;
+    padding: 0 var(--gap);
+    max-width: var(--maxWidth);
     margin: 0 auto;
   }
 
   &__article-compilation {
-    margin-bottom: 3rem;
+    margin-bottom: var(--gap);
   }
 
   &__footer {
-    margin-top: 15rem;
+    margin-top: calc(5 * var(--gap));
+
+    @media (max-width: 800px) {
+      margin-top: 20rem;
+    }
   }
 
 }

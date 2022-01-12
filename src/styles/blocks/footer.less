@@ -1,7 +1,12 @@
 .footer {
-  padding: 0 3rem 3rem 3rem;
   position: relative;
   background-color: #111;
+
+  &__inner {
+    padding: 0 var(--gap) var(--gap) var(--gap);
+    margin: 0 auto;
+    max-width: var(--maxWidth);
+  }
 
   &__star-out-of-border {
     position: absolute;
@@ -10,14 +15,24 @@
     height: 120px;
     z-index: -1;
     top: -90px;
-    left: 3rem;
+    left: var(--gap);
+
+    @media (max-width: 830px) {
+      top: -130px;
+      right: 40px;
+      left: auto;
+    }
   }
 
   &__top {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     align-items: end;
-    gap: 3rem;
+    gap: var(--gap);
+
+    @media (max-width: 830px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__links {
@@ -48,6 +63,10 @@
       height: 48px;
       background: #909090;
       clip-path: polygon(100% 0,100% 100%,0 100%);
+    }
+
+    @media (max-width: 830px) {
+      order: -1;
     }
   }
 

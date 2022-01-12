@@ -17,7 +17,7 @@ function devTask() {
 
     bSync.init({
         server: { 
-            baseDir: paths.baseDir
+            baseDir: paths.destDir
         }
     });
 

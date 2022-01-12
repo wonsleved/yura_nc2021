@@ -29,6 +29,10 @@
       hsla(0,0%,100%,.648) 58.8%,hsla(0,0%,100%,.741) 64.7%,
       hsla(0,0%,100%,.825) 71%,hsla(0,0%,100%,.896) 77.5%,
       hsla(0,0%,100%,.951) 84.5%,hsla(0,0%,100%,.987) 91.9%,#fff);
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
     }
 
     &::before {
@@ -42,5 +46,13 @@
       height: 100%;
       z-index: 2;
     }
+  }
+
+  @media screen and (max-width: 800px) {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 200px;
   }
 }
