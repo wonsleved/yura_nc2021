@@ -26,3 +26,4 @@ jobs:
         with:
           branch: page-mail.ru
           folder: dist
+
