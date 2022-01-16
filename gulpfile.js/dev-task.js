@@ -16,8 +16,8 @@ const makePrettierHTML  = prettier.html;
 function devTask() {
 
     bSync.init({
-        server: { 
-            baseDir: paths.baseDir
+        server: {
+            baseDir: paths.destDir
         }
     });
 

@@ -30,4 +30,3 @@ module.exports = {
   html: makePrettierHTML,
   other: makePrettier
 }
-

@@ -7,7 +7,7 @@ const rename = require('gulp-rename');
 module.exports = function svgStore() {
   const svgs = gulp
     .src(paths.svg.src)
-    .pipe(rename({prefix: 'svg-icon-'}))  
+    .pipe(rename({prefix: 'svg-icon-'}))
     .pipe(svgstore({ inlineSvg: true }));
 
   function fileContents(filePath, file) {
