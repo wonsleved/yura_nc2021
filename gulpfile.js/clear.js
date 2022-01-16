@@ -4,7 +4,7 @@ const clean     = require('gulp-clean');
 
 function clear() {
   return gulp
-    .src(paths.destDir)
+    .src(paths.destDir, {allowEmpty: true})
     .pipe(clean({force: true}))
     .pipe(gulp.dest(paths.destDir));
 }

@@ -1443,5 +1443,28 @@
 
       <!-- endinject -->
     </div>
+
+    <svg width="0" height="0" class="screen-reader">
+      <defs>
+        <linearGradient id="orange-to-pink" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#ff7a18"></stop>
+          <stop offset="40%" stop-color="#af002d"></stop>
+          <stop offset="100%" stop-color="#319197"></stop>
+        </linearGradient>
+        <filter id="duotone_orange_pink">
+          <feColorMatrix type="matrix" result="grayscale" values="1 0 0 0 0
+                  1 0 0 0 0
+                  1 0 0 0 0
+                  0 0 0 1 0">
+          </feColorMatrix>
+          <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.7411764706 0.9882352941"></feFuncR>
+            <feFuncG type="table" tableValues="0.0431372549 0.7333333333"></feFuncG>
+            <feFuncB type="table" tableValues="0.568627451 0.05098039216"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+          </feComponentTransfer>
+        </filter>
+      </defs>
+    </svg>
   </body>
 </html>
