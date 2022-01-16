@@ -1,4 +1,4 @@
-name: [css-tricks] Build and GH-Page Deploy
+name: Build and GH-Page Deploy (css-tricks)
 
 on:
   push:
