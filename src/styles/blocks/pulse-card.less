@@ -3,11 +3,11 @@
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 14px rgba(0,0,0,.08);
-  transition: box-shadow .5s;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.5s;
 
   &:hover {
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,.16);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.16);
   }
 
   &:hover &__close {
@@ -62,7 +62,6 @@
     &._hover-black {
       color: #2c2d2e;
     }
-
   }
 
   &__actions {
@@ -94,7 +93,7 @@
     height: 32px;
     z-index: 6;
     cursor: pointer;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     opacity: 0;
   }
 
@@ -110,14 +109,14 @@
     line-height: 20px;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       top: 20px;
       right: 0;
       width: 90px;
       height: 20px;
-      background: linear-gradient(270deg,#fff,hsla(0,0%,100%,0));
+      background: linear-gradient(270deg, #fff, hsla(0, 0%, 100%, 0));
     }
   }
 }
