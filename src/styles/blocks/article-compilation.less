@@ -9,7 +9,6 @@
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-
   }
 
   &::-webkit-scrollbar {
@@ -20,7 +19,8 @@
   &::-webkit-scrollbar-thumb {
     background: #434343;
     border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+      inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   }
 
   &::-webkit-scrollbar-track {
@@ -38,12 +38,15 @@
       bottom: 3.6rem;
       width: 5px;
       border-radius: 5px;
-      background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+      background: linear-gradient(
+        130deg,
+        #ff7a18,
+        #af002d 41.07%,
+        #319197 76.05%
+      );
       box-shadow: -10px 0 20px 3px #000;
     }
   }
-
-
 
   &__header {
     @media (max-width: 1200px) {
@@ -66,7 +69,12 @@
     position: relative;
     &::before {
       content: "";
-      background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+      background: linear-gradient(
+        130deg,
+        #ff7a18,
+        #af002d 41.07%,
+        #319197 76.05%
+      );
       position: absolute;
       top: -5px;
       left: -5px;
@@ -94,7 +102,7 @@
     margin-bottom: 1.5rem;
     font-weight: 800;
     line-height: 1.1;
-    font-size: clamp(1.8rem,calc(1.8rem + .2vw),3rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.2vw), 3rem);
     color: #fff;
   }
 
