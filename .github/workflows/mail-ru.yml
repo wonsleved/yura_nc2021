@@ -1,4 +1,4 @@
-name: [mail.ru] Build and GH-Page Deploy
+name: Build and GH-Page Deploy (mail.ru)
 
 on:
   push:
