@@ -5,7 +5,7 @@ const bsync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 
 function compileLessDev() {
-  return gulp
+    return gulp
     .src( paths.styles.src )
     .pipe( sourcemaps.init() )
     .pipe( less() )
@@ -15,15 +15,15 @@ function compileLessDev() {
 };
 
 function compileLessProd() {
-  return gulp
+    return gulp
     .src( paths.styles.src )
     .pipe( less() )
     .pipe( gulp.dest(paths.styles.dest) );
 };
 
 const compileLess = {
-  prod: compileLessDev,
-  dev: compileLessProd
+    prod: compileLessDev,
+    dev: compileLessProd
 }
 
 module.exports = compileLess;

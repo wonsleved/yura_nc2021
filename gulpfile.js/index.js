@@ -14,5 +14,6 @@ const isProduction = mode.production();
 if (isProduction) {
     task('default', prodTask);
 } else {
-    task('default', series(prodTask, devTask));
+    task('default', devTask);
 }
+
