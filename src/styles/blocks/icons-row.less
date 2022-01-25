@@ -1,0 +1,15 @@
+.icons-row {
+  color: #005ff9;
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > &__icon {
+    fill: currentColor;
+
+    &:not(&:nth-child(1)) {
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.weather-widget {
+  &__header {
+    padding: 12px 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__city-name {
+    white-space: nowrap;
+    display: block;
+    color: #2c2d2e;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  &__detailed {
+    font-size: 13px;
+    font-weight: 400;
+    color: #005bd1;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__weather-forecast {
+    border-top: 1px solid #f0f1f3;
+    margin: 0 20px;
+  }
+}
