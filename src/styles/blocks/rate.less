@@ -1,0 +1,46 @@
+.rate {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  &__currency {
+    margin-left: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  &__currency-now {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  &__currency-diff {
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+    &._red {
+      color: #f44e4e;
+    }
+
+    &._green {
+      color: #0dc268;
+    }
+  }
+
+  &__currency-diff-icon {
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__icon {
+    margin-top: 2px;
+  }
+}
