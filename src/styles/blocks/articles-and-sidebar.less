@@ -1,0 +1,16 @@
+.articles-and-sidebar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: var(--gap);
+
+  @media screen and (max-width: 800px) {
+    display: block;
+    padding-top: 0;
+  }
+
+  &__sidebar {
+    @media (max-width: 800px) {
+      display: none !important;
+    }
+  }
+}

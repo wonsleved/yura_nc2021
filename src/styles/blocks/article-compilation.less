@@ -1,0 +1,103 @@
+.article-compilation {
+  display: flex;
+  position: relative;
+  box-sizing: content-box;
+
+  @media (max-width: 1200px) {
+    padding-bottom: var(--gap);
+    padding-left: 5px;
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::after {
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 1200px) {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 3rem;
+      bottom: 3.6rem;
+      width: 5px;
+      border-radius: 5px;
+      background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+      box-shadow: -10px 0 20px 3px #000;
+    }
+  }
+
+  &__header {
+    @media (max-width: 1200px) {
+      scroll-snap-align: start;
+      scroll-margin-inline-start: 5px;
+    }
+
+    @media (max-width: 800px) {
+      flex: 0 0 175px;
+    }
+
+    padding: 1.5rem;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: translateY(-10px);
+    position: relative;
+    &::before {
+      content: '';
+      background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      z-index: 1;
+      border-radius: 12px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: 2;
+      border-radius: 8px;
+    }
+  }
+
+  &__title {
+    z-index: 3;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    font-size: clamp(1.8rem, calc(1.8rem + 0.2vw), 3rem);
+    color: #fff;
+  }
+
+  &__sponsor {
+    z-index: 3;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+}

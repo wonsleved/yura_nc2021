@@ -1,0 +1,42 @@
+.article-compilation-card {
+  min-width: 300px;
+  min-height: 350px;
+  box-shadow: -2rem 0 3rem -2rem #000;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(85deg, #434343, #262626);
+
+  @media (max-width: 1200px) {
+    min-width: 220px;
+  }
+
+  @media (max-width: 800px) {
+    min-width: 190px;
+  }
+
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s;
+
+  &__date {
+    color: #777;
+    margin-bottom: 0.25rem;
+    & strong {
+      color: #d4d4d4;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    line-height: 1.1;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+  }
+
+  &__author-info {
+    margin-top: auto;
+  }
+}

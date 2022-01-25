@@ -1,0 +1,20 @@
+.article-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: #fff;
+  color: #474747;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.24));
+
+  &__content {
+    z-index: 99;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
