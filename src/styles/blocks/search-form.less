@@ -18,22 +18,22 @@
     padding-right: 48px;
     padding-left: 40px;
     height: 38px;
-    font-size: 17px;
-    box-shadow: 0 0 1px #ff9e00;
-    border: 2px solid #ff9e00;
+    .font(17px);
+    box-shadow: 0 0 1px @yellow-color;
+    border: 2px solid @yellow-color;
     border-radius: 6px 0 0 6px;
     outline: none;
 
     &:hover {
-      box-shadow: 0 0 2px #ff9e00;
-      border: 3px solid #ff9e00;
+      box-shadow: 0 0 2px @yellow-color;
+      border: 3px solid @yellow-color;
     }
   }
 
   &__popular-query {
     position: absolute;
     right: 119px;
-    font-size: 13px;
+    .font(13px);
     line-height: 20px;
     top: 10px;
 
@@ -45,11 +45,11 @@
   }
 
   &__popular-query-title {
-    color: #999;
+    color: @gray-color;
   }
 
   &__popular-query-text {
-    color: #005bd1;
+    color: @sea-color;
   }
 
   &__button {
@@ -58,15 +58,15 @@
     top: 0;
     height: 38px;
     width: 107px;
-    border: 2px solid #ff9e00;
-    background-color: #ff9e00;
+    border: 2px solid @yellow-color;
+    background-color: @yellow-color;
     border-radius: 0 6px 6px 0;
     cursor: pointer;
-    font-size: 17px;
-    color: #fff;
+    .font(17px);
+    color: @white-color;
 
     &:hover {
-      background: #f69902;
+      background: @yellow-2-color;
     }
   }
 }

@@ -4,6 +4,11 @@
   align-items: center;
   padding: 8px 0 12px;
 
+  &__picture {
+    width: 24px;
+    height: 24px;
+  }
+
   &__weather {
     display: flex;
     justify-content: center;
@@ -11,14 +16,14 @@
   }
 
   &__time {
-    font-size: 13px;
-    color: #919399;
+    .font(13px);
+    color: @gray-2-color;
   }
 
   &__temperature {
-    font-size: 15px;
+    .font(15px);
     line-height: 20px;
-    font-weight: 700;
+    .bold-font;
     margin: 0 0 0 6px;
   }
 }

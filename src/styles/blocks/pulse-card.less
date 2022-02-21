@@ -26,8 +26,8 @@
     padding: 12px 16px 0 16px;
     height: 96px;
     overflow: hidden;
-    font-size: 15px;
-    font-weight: 700;
+    .font(15px);
+    .bold-font;
   }
 
   &__footer {
@@ -39,7 +39,7 @@
   }
 
   &__content-resource {
-    font-size: 11px;
+    .font(11px);
     white-space: nowrap;
     text-decoration: none;
     text-overflow: ellipsis;
@@ -51,7 +51,9 @@
   }
 
   &__action-icon {
-    color: #bfc1c7;
+    color: @gray-2-color;
+    width: 16px;
+    height: 16px;
   }
 
   &__action:hover &__action-icon {
@@ -60,7 +62,7 @@
     }
 
     &._hover-black {
-      color: #2c2d2e;
+      color: @dark-gray-2-color;
     }
   }
 
@@ -77,7 +79,7 @@
   }
 
   &__action-count {
-    font-size: 13px;
+    .font(13px);
     margin-left: 8px;
     -webkit-font-smoothing: antialiased;
   }
@@ -99,8 +101,8 @@
 
   &__description {
     display: block;
-    font-size: 15px;
-    font-weight: 400;
+    .font(15px);
+    .thin-font;
     margin-top: 4px;
     padding-right: 20px;
     overflow: hidden;
@@ -116,7 +118,7 @@
       right: 0;
       width: 90px;
       height: 20px;
-      background: linear-gradient(270deg, #fff, hsla(0, 0%, 100%, 0));
+      background: linear-gradient(270deg, @white-color, hsla(0, 0%, 100%, 0));
     }
   }
 }

@@ -3,10 +3,15 @@
   align-items: center;
   padding: 0 8px 4px 20px;
 
+  &__picture {
+    width: 28px;
+    height: 28px;
+  }
+
   &__temperature {
-    font-size: 24px;
+    .font(24px);
     line-height: 32px;
-    font-weight: 700;
+    .bold-font;
     margin: 0 12px;
   }
 
@@ -20,11 +25,11 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-right: 8px;
-    font-size: 15px;
+    .font(15px);
   }
 
   &__additional-description {
-    font-size: 13px;
-    color: #919399;
+    .font(13px);
+    color: @gray-2-color;
   }
 }

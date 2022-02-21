@@ -1,0 +1,50 @@
+.link {
+
+  &._large {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    box-shadow: inset -8px 0 16px @white-color;
+    overflow-wrap: normal;
+
+    overflow: hidden;
+    text-overflow: clip;
+    color: @sea-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  &._large &__description {
+    color: black;
+    display: inline-block;
+  }
+
+  &._large:hover &__description {
+    text-decoration: none;
+  }
+
+  &._button-style {
+    padding: 4px 8px;
+    border-radius: 8px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: rgb(0 16 61 / 4%);
+    }
+
+    &:active {
+      background-color: rgb(0 16 61 / 8%);
+    }
+  }
+
+
+
+}

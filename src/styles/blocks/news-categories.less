@@ -3,10 +3,10 @@
   padding-top: 12px;
   white-space: nowrap;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  font-size: 15px;
+  .font(15px);
 
   @media screen and (max-width: 1069px) {
-    font-size: 13px;
+    .font(13px);
   }
 
   &__category {
@@ -17,12 +17,12 @@
     position: relative;
     overflow: hidden;
 
-    &.__selected {
-      color: #005bd1;
-      font-weight: 700;
+    &._selected {
+      color: @sea-color;
+      .bold-font;
       &::after {
         content: '';
-        border-bottom: 2px solid #005bd1;
+        border-bottom: 2px solid @sea-color;
         position: absolute;
         bottom: -1px;
         right: 10px;
@@ -30,7 +30,7 @@
       }
     }
 
-    &:hover:not(&.__selected) {
+    &:hover:not(&._selected) {
       &::after {
         content: '';
         border-bottom: 2px solid rgba(0, 0, 0, 0.12);

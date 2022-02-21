@@ -3,17 +3,16 @@
   flex-wrap: wrap;
   align-items: center;
 
-  &__link,
-  &__button {
+  &__link, &__button {
     height: 32px;
     cursor: pointer;
     text-decoration: none;
     display: block;
-    color: #919399;
+    color: @gray-2-color;
     padding: 6px 8px;
     white-space: nowrap;
     border-radius: 8px;
-    font-size: 15px;
+    .font(15px);
     line-height: 20px;
 
     &:hover {
@@ -22,22 +21,9 @@
   }
 
   &__button {
+    margin: 6px 8px;
     border: none;
     outline: none;
     background: none;
-    fill: currentColor;
-
-    padding: 0 2px;
-    margin: 6px 8px;
-
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & svg {
-      display: block;
-    }
   }
 }

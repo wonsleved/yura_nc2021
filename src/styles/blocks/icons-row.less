@@ -1,15 +1,20 @@
 .icons-row {
-  color: #005ff9;
+  color: @sea-2-color;
   fill: currentColor;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  & > &__icon {
+  &__icon {
     fill: currentColor;
 
     &:not(&:nth-child(1)) {
       margin-left: 20px;
     }
+  }
+
+  &__icon-svg {
+    height: 16px;
+    width: 16px;
   }
 }

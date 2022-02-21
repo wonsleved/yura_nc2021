@@ -11,26 +11,25 @@
   }
 
   &__currency-now {
-    font-size: 15px;
+    .font(15px);
     line-height: 20px;
     margin-bottom: 2px;
-    font-weight: 400;
-    font-family: Helvetica, Arial, sans-serif;
+    .thin-font;
   }
 
   &__currency-diff {
-    font-size: 11px;
+    .font(11px);
     line-height: 12px;
-    font-weight: 400;
+    .thin-font;
     display: flex;
     align-items: center;
 
-    &._red {
-      color: #f44e4e;
+    &._down {
+      color: @delicate-red-color;
     }
 
-    &._green {
-      color: #0dc268;
+    &._up {
+      color: @emerald-color;
     }
   }
 
@@ -42,5 +41,7 @@
 
   &__icon {
     margin-top: 2px;
+    width: 16px;
+    height: 16px;
   }
 }

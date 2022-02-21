@@ -1,9 +1,215 @@
 .widget {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  background-color: #fff;
+  background-color: @white-color;
   border-radius: 8px;
   transition: box-shadow 0.5s;
+
   &:hover {
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  //  Weather
+  &._weather &__header {
+    padding: 12px 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &._weather &__city-name {
+    white-space: nowrap;
+    display: block;
+    color: @dark-gray-2-color;
+    .font(15px);
+    .bold-font;
+  }
+
+  &._weather &__detailed {
+    .font(13px);
+    .thin-font;
+    color: @sea-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &._weather &__weather-forecast {
+    border-top: 1px solid @white-2-color;
+    margin: 0 20px;
+  }
+
+  //  Stocks
+  &._stocks {
+    padding: 10px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+  }
+
+  // Horoscope
+  &._horoscope {
+    height: 82px;
+    padding: 12px 20px;
+    display: flex;
+  }
+
+  &._horoscope &__icon {
+    flex-shrink: 0;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: @emerald-color;
+  }
+
+  &._horoscope &__icon-svg {
+    height: 16px;
+    width: 16px;
+  }
+
+  &._horoscope &__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+  }
+
+  &._horoscope &__title {
+    .font(15px);
+    color: @dark-gray-color;
+  }
+
+  &._horoscope &__description {
+    height: 40px;
+    color: @gray-color;
+    .font(13px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  //  Covid
+
+  &._covid {
+    padding: 0 20px;
+  }
+
+  &._covid &__head {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    border-bottom: 1px solid @white-2-color;
+  }
+
+  &._covid &__title {
+    .font(15px);
+    color: @dark-gray-2-color;
+  }
+
+  &._covid &__current-info {
+    .font(13px);
+    color: @gray-2-color;
+  }
+
+  &._covid &__content {
+    display: block;
+    margin-top: 9px;
+  }
+
+  //  Games
+
+  &._games {
+    padding: 12px 18px 0 20px;
+  }
+
+  &._games &__header {
+    padding-bottom: 16px;
+    border-bottom: 1px solid @white-2-color;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &._games &__icon {
+    margin-right: 16px;
+    width: 36px;
+    height: 36px;
+  }
+
+  &._games &__text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &._games &__header-title {
+    .font(15px);
+    line-height: 20px;
+  }
+
+  &._games &__description {
+    .font(13px);
+    line-height: 20px;
+
+    color: @gray-2-color;
+  }
+
+  &._games &__game {
+    padding: 8px 0;
+    display: flex;
+    justify-content: start;
+  }
+
+  &._games &__title {
+    margin-bottom: 0;
+    .bold-font;
+    color: @dark-gray-2-color;
+    .font(13px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &._games &__play-button {
+    justify-self: end;
+    margin-left: auto;
+  }
+
+  //  Services
+
+  &._services {
+    padding: 12px 18px 16px 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &._services &__icon {
+    border-radius: 12px;
+    margin-right: 16px;
+    width: 36px;
+    height: 36px;
+  }
+
+  &._services &__text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &._services &__title {
+    .font(15px);
+    line-height: 20px;
+  }
+
+  &._services &__description {
+    .font(13px);
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: @gray-2-color;
   }
 }
