@@ -21,49 +21,47 @@
       <header class="page__header headline">
         <ul class="services-list">
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Mail.ru </a>
+            <a href="#" class="link _button-style"> Mail.ru </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Почта </a>
+            <a href="#" class="link _button-style"> Почта </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Мой Мир </a>
+            <a href="#" class="link _button-style"> Мой Мир </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Одноклассники </a>
+            <a href="#" class="link _button-style"> Одноклассники </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> ВКонтакте </a>
+            <a href="#" class="link _button-style"> ВКонтакте </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Игры </a>
+            <a href="#" class="link _button-style"> Игры </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Знакомства </a>
+            <a href="#" class="link _button-style"> Знакомства </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Новости </a>
+            <a href="#" class="link _button-style"> Новости </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Поиск </a>
+            <a href="#" class="link _button-style"> Поиск </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> Облако </a>
+            <a href="#" class="link _button-style"> Облако </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> VK Работа </a>
+            <a href="#" class="link _button-style"> VK Работа </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link"> VK Combo </a>
+            <a href="#" class="link _button-style"> VK Combo </a>
           </li>
           <li class="services-list__item">
-            <a href="#" class="services-list__link">
+            <a href="#" class="link _button-style">
               Все проекты
-              <div class="services-list__inline-icon">
-                <svg height="14" width="14" aria-hidden="true">
+                <svg aria-hidden="true" class="services-list__inline-icon">
                   <use xlink:href="#svg-icon-vk_combo"></use>
                 </svg>
-              </div>
             </a>
           </li>
         </ul>
@@ -86,17 +84,17 @@
                       <a href="#" class="mail-head__mail">Почта</a>
                       <div class="mail-head__icons icons-row">
                         <a href="#" class="icons-row__icon" title="Видеозвонки">
-                          <svg height="16" width="16" aria-hidden="true">
+                          <svg class="icons-row__icon-svg" aria-hidden="true">
                             <use xlink:href="#svg-icon-camera"></use>
                           </svg>
                         </a>
                         <a href="#" class="icons-row__icon" title="Облако">
-                          <svg class="icons-row__icon" height="16" width="16" aria-hidden="true">
+                          <svg class="icons-row__icon-svg" aria-hidden="true">
                             <use xlink:href="#svg-icon-cloud"></use>
                           </svg>
                         </a>
                         <a href="#" class="icons-row__icon" title="Календарь">
-                          <svg class="icons-row__icon" height="16" width="16" aria-hidden="true">
+                          <svg class="icons-row__icon-svg" aria-hidden="true">
                             <use xlink:href="#svg-icon-calendar_alt"></use>
                           </svg>
                         </a>
@@ -107,19 +105,17 @@
                       <div class="email-input-box authorize-form__email">
                         <input type="text" class="email-input-box__name" placeholder="Имя ящика" />
                         <select name="domain" class="email-input-box__domain">
-                          <option value="mail.ru" selected>@mail.ru</option>
-                          <option value="inbox.ru">@inbox.ru</option>
-                          <option value="list.ru">@list.ru</option>
-                          <option value="bk.ru">@bk.ru</option>
-                          <option value="internet.ru">@internet.ru</option>
+                          <option class="email-input-box__option" value="mail.ru" selected>@mail.ru</option>
+                          <option class="email-input-box__option" value="inbox.ru">@inbox.ru</option>
+                          <option class="email-input-box__option" value="list.ru">@list.ru</option>
+                          <option class="email-input-box__option" value="bk.ru">@bk.ru</option>
+                          <option class="email-input-box__option" value="internet.ru">@internet.ru</option>
                         </select>
                       </div>
                       <button class="enter-password-button authorize-form__button">
                         <span class="enter-password-button__text">Ввести пароль</span>
                         <svg
                           class="enter-password-button__arrow"
-                          height="16"
-                          width="16"
                           aria-hidden="true"
                         >
                           <use xlink:href="#svg-icon-arrow_next"></use>
@@ -149,19 +145,16 @@
                 </div>
               </div>
 
-              <div class="widgets__widget widget">
-                <div class="weather-widget">
-                  <header class="weather-widget__header">
-                    <a href="#" class="weather-widget__city-name">Москва</a>
-                    <a href="#" class="weather-widget__detailed">Подробнее</a>
+              <div class="widgets__widget widget _weather">
+                  <header class="widget__header">
+                    <a href="#" class="widget__city-name">Москва</a>
+                    <a href="#" class="widget__detailed">Подробнее</a>
                   </header>
-                  <a href="#" class="weather-widget__weather-now weather-now">
+                  <a href="#" class="widget__weather-now weather-now">
                     <img
                       title="облачно, без существенных осадков"
                       src="https://limg.imgsmail.ru/assets/weather_icons/04.svg"
-                      alt="облачно, без существенных осадков"
-                      width="28"
-                      height="28"
+                      class="weather-now__picture"
                     />
                     <div class="weather-now__temperature">-10°</div>
                     <div class="weather-now__text">
@@ -169,16 +162,14 @@
                       <div class="weather-now__additional-description">Влажность 92%</div>
                     </div>
                   </a>
-                  <a href="#" class="weather-widget__weather-forecast weather-forecast">
+                  <a href="#" class="widget__weather-forecast weather-forecast">
                     <div class="weather-forecast__block">
                       <div class="weather-forecast__time">Ночью</div>
                       <div class="weather-forecast__weather">
                         <img
-                          class="weather-forecast__pic"
+                          class="weather-forecast__picture"
                           src="https://limg.imgsmail.ru/assets/weather_icons/24.svg"
                           alt="переменная облачность, небольшой снег"
-                          width="24"
-                          height="24"
                         />
                         <div class="weather-forecast__temperature">-6°</div>
                       </div>
@@ -188,11 +179,9 @@
                       <div class="weather-forecast__time">Утром</div>
                       <div class="weather-forecast__weather">
                         <img
-                          class="weather-forecast__pic"
+                          class="weather-forecast__picture"
                           src="https://limg.imgsmail.ru/assets/weather_icons/05.svg"
                           alt="переменная облачность"
-                          width="24"
-                          height="24"
                         />
                         <div class="weather-forecast__temperature">-4°</div>
                       </div>
@@ -202,32 +191,26 @@
                       <div class="weather-forecast__time">Днём</div>
                       <div class="weather-forecast__weather">
                         <img
-                          class="weather-forecast__pic"
+                          class="weather-forecast__picture"
                           src="https://limg.imgsmail.ru/assets/weather_icons/05.svg"
                           alt="переменная облачность"
-                          width="24"
-                          height="24"
                         />
                         <div class="weather-forecast__temperature">-2°</div>
                       </div>
                     </div>
                   </a>
-                </div>
               </div>
 
-              <div class="widgets__widget widget">
-                <div class="stocks-widget">
+              <div class="widgets__widget widget _stocks">
                   <a href="#" class="rate">
-                    <svg class="rate__icon" width="16px" height="16px">
+                    <svg class="rate__icon">
                       <use xlink:href="#svg-icon-rate_dollar"></use>
                     </svg>
                     <div class="rate__currency">
                       <span class="rate__currency-now">73.61</span>
-                      <span class="rate__currency-diff _green">
+                      <span class="rate__currency-diff _up">
                         +0.01
                         <svg
-                          height="11px"
-                          width="11px"
                           class="rate__currency-diff-icon"
                           aria-hidden="true"
                         >
@@ -238,16 +221,14 @@
                   </a>
 
                   <a href="#" class="rate">
-                    <svg class="rate__icon" width="16px" height="16px">
+                    <svg class="rate__icon">
                       <use xlink:href="#svg-icon-rate_euro"></use>
                     </svg>
                     <div class="rate__currency">
                       <span class="rate__currency-now">83.12</span>
-                      <span class="rate__currency-diff _red">
+                      <span class="rate__currency-diff _down">
                         -0.23
                         <svg
-                          height="11px"
-                          width="11px"
                           class="rate__currency-diff-icon"
                           aria-hidden="true"
                         >
@@ -258,16 +239,14 @@
                   </a>
 
                   <a href="#" class="rate">
-                    <svg class="rate__icon" width="16px" height="16px">
+                    <svg class="rate__icon">
                       <use xlink:href="#svg-icon-rate_oil"></use>
                     </svg>
                     <div class="rate__currency">
                       <span class="rate__currency-now">75.38</span>
-                      <span class="rate__currency-diff _green">
+                      <span class="rate__currency-diff _up">
                         <span>+1.25</span>
                         <svg
-                          height="11px"
-                          width="11px"
                           class="rate__currency-diff-icon"
                           aria-hidden="true"
                         >
@@ -276,36 +255,31 @@
                       </span>
                     </div>
                   </a>
-                </div>
               </div>
 
-              <div class="widgets__widget widget">
-                <a href="#" class="horoscope-widget">
-                  <div class="horoscope-widget__icon">
+              <a href="#" class="widgets__widget widget _horoscope">
+                  <div class="widget__icon">
                     <img
                       src="//limg.imgsmail.ru/assets/horo_icons/pisces.svg"
+                      class="widget__icon-svg"
                       alt=""
-                      width="16"
-                      height="16"
                     />
                   </div>
-                  <div class="horoscope-widget__text">
-                    <div class="horoscope-widget__title">Гороскоп: Рыбы</div>
-                    <div class="horoscope-widget__description">
+                  <div class="widget__text">
+                    <div class="widget__title">Гороскоп: Рыбы</div>
+                    <div class="widget__description">
                       Приятный плодотворный день. Можно отлично...
                     </div>
                   </div>
-                </a>
-              </div>
+              </a>
 
-              <div class="widgets__widget widget">
-                <div class="covid-widget">
-                  <a href="#" class="covid-widget__head">
-                    <span class="covid-widget__title">Коронавирус COVID-19</span>
-                    <span class="covid-widget__current-info">Новые случаи 7 марта</span>
+              <div class="widgets__widget widget _covid">
+                  <a href="#" class="widget__head">
+                    <span class="widget__title">Коронавирус COVID-19</span>
+                    <span class="widget__current-info">Новые случаи 7 марта</span>
                   </a>
 
-                  <a href="#" class="covid-widget__content covid-content">
+                  <a href="#" class="widget__content covid-content">
                     <div class="covid-content__area-tabs">
                       <span class="covid-content__tab _selected">Москва</span>
                       <span class="covid-content__tab">Россия</span>
@@ -322,241 +296,210 @@
                       <span class="covid-content__right-mark">Декабрь</span>
                     </div>
                   </a>
-                </div>
               </div>
 
-              <div class="widgets__widget widget">
-                <div class="games-widget">
-                  <a href="#" class="games-widget__header">
+              <div class="widgets__widget widget _games">
+                  <a href="#" class="widget__header">
                     <img
-                      class="games-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/FD/5FAA4F.png"
                       alt="Каталог игр"
                       title="Каталог игр"
-                      width="36"
-                      height="36"
                     />
-                    <div class="games-widget__text">
-                      <div class="games-widget__header-title">Каталог Игр</div>
-                      <div class="games-widget__description">Вам понравится</div>
+                    <div class="widget__text">
+                      <div class="widget__header-title">Каталог Игр</div>
+                      <div class="widget__description">Вам понравится</div>
                     </div>
                   </a>
 
-                  <ul class="games-widget__list">
-                    <li class="games-widget__list-item">
-                      <a href="#" class="games-widget__game">
+                  <ul class="widget__list">
+                    <li class="widget__list-item">
+                      <a href="#" class="widget__game">
                         <img
-                          class="games-widget__icon"
+                          class="widget__icon"
                           src="https://r.mradx.net/img/A6/35147F.png"
                           alt="Battle Tanks"
                           title="Battle Tanks"
-                          width="36"
-                          height="36"
                         />
-                        <div class="games-widget__text">
-                          <div class="games-widget__title">ArcheAge</div>
-                          <div class="games-widget__description">MMORPG</div>
+                        <div class="widget__text">
+                          <div class="widget__title">ArcheAge</div>
+                          <div class="widget__description">MMORPG</div>
                         </div>
-                        <div class="play-game-button games-widget__play-button">Играть</div>
+                        <div class="play-game-button widget__play-button">Играть</div>
                       </a>
                     </li>
-                    <li class="games-widget__list-item">
-                      <a href="#" class="games-widget__game">
+                    <li class="widget__list-item">
+                      <a href="#" class="widget__game">
                         <img
-                          class="games-widget__icon"
+                          class="widget__icon"
                           src="https://r.mradx.net/img/F0/B3B515.png"
                           alt="Battle Arena"
                           title="Battle Arena"
-                          width="36"
-                          height="36"
                         />
-                        <div class="games-widget__text">
-                          <div class="games-widget__title">Гильдия Героев</div>
-                          <div class="games-widget__description">MMORPG</div>
+                        <div class="widget__text">
+                          <div class="widget__title">Гильдия Героев</div>
+                          <div class="widget__description">MMORPG</div>
                         </div>
-                        <div class="play-game-button games-widget__play-button">Играть</div>
+                        <div class="play-game-button widget__play-button">Играть</div>
                       </a>
                     </li>
-                    <li class="games-widget__list-item">
-                      <a href="#" class="games-widget__game">
+                    <li class="widget__list-item">
+                      <a href="#" class="widget__game">
                         <img
-                          class="games-widget__icon"
+                          class="widget__icon"
                           src="https://r.mradx.net/img/A5/2D85E5.png"
                           alt="War Robots"
                           title="War Robots"
-                          width="36"
-                          height="36"
                         />
-                        <div class="games-widget__text">
-                          <div class="games-widget__title">Hustle Castle</div>
-                          <div class="games-widget__description">MMORPG</div>
+                        <div class="widget__text">
+                          <div class="widget__title">Hustle Castle</div>
+                          <div class="widget__description">MMORPG</div>
                         </div>
-                        <div class="play-game-button games-widget__play-button">Играть</div>
+                        <div class="play-game-button widget__play-button">Играть</div>
                       </a>
                     </li>
                   </ul>
-                </div>
               </div>
 
               <ul class="widgets__services-list">
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/E2/DB6FBB.png"
                       alt="VK Работа"
                       title="VK Работа"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">VK Работа</div>
-                      <div class="services-widget__description">Найди работу за 24 часа</div>
+                    <div class="widget__text">
+                      <div class="widget__title">VK Работа</div>
+                      <div class="widget__description">Найди работу за 24 часа</div>
                     </div>
                   </a>
                 </li>
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/D0/DE7E9A.png"
                       alt="Одноклассники"
                       title="Одноклассники"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">Одноклассники</div>
-                      <div class="services-widget__description">Подарки на любой вкус</div>
+                    <div class="widget__text">
+                      <div class="widget__title">Одноклассники</div>
+                      <div class="widget__description">Подарки на любой вкус</div>
                     </div>
                   </a>
                 </li>
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/1C/4437EF.png"
                       alt="ВКонтакте"
                       title="ВКонтакте"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">ВКонтакте</div>
-                      <div class="services-widget__description">Вы могли пропустить</div>
+                    <div class="widget__text">
+                      <div class="widget__title">ВКонтакте</div>
+                      <div class="widget__description">Вы могли пропустить</div>
                     </div>
                   </a>
                 </li>
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/32/66AFA3.png"
                       alt="Облако"
                       title="Облако"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">Облако</div>
-                      <div class="services-widget__description">Сохраните фотографии</div>
+                    <div class="widget__text">
+                      <div class="widget__title">Облако</div>
+                      <div class="widget__description">Сохраните фотографии</div>
                     </div>
                   </a>
                 </li>
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/64/B5CFED.png"
                       alt="ТВ-программа"
                       title="ТВ-программа"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">ТВ-Программа</div>
-                      <div class="services-widget__description">Что смотреть сегодня</div>
+                    <div class="widget__text">
+                      <div class="widget__title">ТВ-Программа</div>
+                      <div class="widget__description">Что смотреть сегодня</div>
                     </div>
                   </a>
                 </li>
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/23/04F461.png"
                       alt="VK Combo"
                       title="VK Combo"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">VK Combo</div>
-                      <div class="services-widget__description">Музыка и скидки</div>
+                    <div class="widget__text">
+                      <div class="widget__title">VK Combo</div>
+                      <div class="widget__description">Музыка и скидки</div>
                     </div>
                   </a>
                 </li>
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/6D/A483ED.png"
                       alt="Юла"
                       title="Юла"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">Юла</div>
-                      <div class="services-widget__description">Бесплатные объявления</div>
+                    <div class="widget__text">
+                      <div class="widget__title">Юла</div>
+                      <div class="widget__description">Бесплатные объявления</div>
                     </div>
                   </a>
                 </li>
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/A0/B496C9.png"
                       alt="AliExpress Россия"
                       title="AliExpress Россия"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">AliExpress Россия</div>
-                      <div class="services-widget__description">Гигантский выбор и скидки</div>
+                    <div class="widget__text">
+                      <div class="widget__title">AliExpress Россия</div>
+                      <div class="widget__description">Гигантский выбор и скидки</div>
                     </div>
                   </a>
                 </li>
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/FB/342058.png"
                       alt="GeekBrains"
                       title="GeekBrains"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">GeekBrains</div>
-                      <div class="services-widget__description">Онлайн-университет</div>
+                    <div class="widget__text">
+                      <div class="widget__title">GeekBrains</div>
+                      <div class="widget__description">Онлайн-университет</div>
                     </div>
                   </a>
                 </li>
 
-                <li class="widgets__widget widget">
-                  <a href="#" class="services-widget">
+                <li class="widgets__service">
+                  <a href="#" class="widgets__widget widget _services">
                     <img
-                      class="services-widget__icon"
+                      class="widget__icon"
                       src="https://r.mradx.net/img/06/C5262B.png"
                       alt="Skillbox"
                       title="Skillbox"
-                      width="36"
-                      height="36"
                     />
-                    <div class="services-widget__text">
-                      <div class="services-widget__title">Курсы Skillbox</div>
-                      <div class="services-widget__description">С трудоустройством</div>
+                    <div class="widget__text">
+                      <div class="widget__title">Курсы Skillbox</div>
+                      <div class="widget__description">С трудоустройством</div>
                     </div>
                   </a>
                 </li>
@@ -567,7 +510,7 @@
               <a href="#" class="side-footer__link"> Политика конфиденциальности </a>
               <a href="#" class="side-footer__link"> О компании </a>
               <button class="dots-button side-footer__button">
-                <svg class="more" height="16" width="16" aria-hidden="true">
+                <svg class="dots-button__icon" aria-hidden="true">
                   <use xlink:href="#svg-icon-more"></use>
                 </svg>
               </button>
@@ -600,7 +543,7 @@
             <div class="news-content">
               <ul class="news-categories news-content__categories">
                 <li class="news-categories__item">
-                  <a href="#" class="news-categories__category __selected"> Новости </a>
+                  <a href="#" class="news-categories__category _selected"> Новости </a>
                 </li>
                 <li class="news-categories__item">
                   <a href="#" class="news-categories__category"> COVID-19 </a>
@@ -640,7 +583,7 @@
               <div class="main-news">
                 <ul class="news main-news__left-col">
                   <li class="news__item">
-                    <a href="#" class="news__link">
+                    <a href="#" class="news__link link _large">
                       <img
                         class="news__image"
                         src="https://r.mradx.net/pictures/C1/B5AA1F.jpg"
@@ -649,15 +592,12 @@
                           https://r.mradx.net/pictures/C1/B5AA1F.jpg 2x
                         "
                         alt=""
-                        width="64"
-                        height="48"
-                        data-testid="news-image"
                       />
-                      <div class="news__with-description">
-                        <p class="news__text">
+                      <div class="link__with-description">
+                        <p class="link__title">
                           Власти Казахстана заморозили тарифы на услуги ЖКХ на полгода
                         </p>
-                        <p class="news__description">
+                        <p class="link__description">
                           Речь идет о ценах на водоснабжение, отопление, газоснабжение и
                           электричество. На такие меры власти пошли из-за беспорядков
                         </p>
@@ -665,93 +605,77 @@
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">
+                    <a href="#" class="news__link link _large">
                         В МИД Германии объяснили приостановку сертификации Nord Stream 2
-                      </p>
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">Владимир Кириенко назначен генеральным директором VK</p>
+                    <a href="#" class="news__link link _large">
+                      Владимир Кириенко назначен генеральным директором VK
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">
+                    <a href="#" class="news__link link _large">
                         Что известно о взрыве в женском монастыре в Серпухове
-                      </p>
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">
+                    <a href="#" class="news__link link _large">
                         Российские парикмахерские раскритиковали за маскулинность
-                      </p>
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">Участница из Индии завоевала титул «Мисс Вселенная»</p>
+                    <a href="#" class="news__link link _large">
+                      Участница из Индии завоевала титул «Мисс Вселенная»
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">
+                    <a href="#" class="news__link link _large">
                         Пять человек пострадали в результате стрельбы в Курской области
-                      </p>
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">В России омикрон-штамм выявлен у 16 человек</p>
+                    <a href="#" class="news__link link _large">
+                      В России омикрон-штамм выявлен у 16 человек
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">
+                    <a href="#" class="news__link link _large">
                         Фото дня: иероглиф «золото» стал символом года в Японии
-                      </p>
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">
+                    <a href="#" class="news__link link _large">
                         Украина считает бесполезным план НАТО по «сдерживанию» России
-                      </p>
                     </a>
                   </li>
                   <li class="news__item">
-                    <a href="#" class="news__link">
-                      <p class="news__text">
+                    <a href="#" class="news__link link _large">
                         СМИ назвали свидетелей по делу блогера Юрия Хованского
-                      </p>
                     </a>
                   </li>
                   <li class="news__item">
                     <a href="#" class="news__category-prefix">HI-TECH</a>
-                    <a href="#" class="news__link">
-                      <p class="news__text">В Якутии вспыхнули «зомби-пожары». Что это</p>
+                    <a href="#" class="news__link link _large">
+                      В Якутии вспыхнули «зомби-пожары». Что это
                     </a>
                   </li>
                   <li class="news__item">
                     <a href="#" class="news__category-prefix">ЗДОРОВЬЕ</a>
-                    <a href="#" class="news__link">
-                      <p class="news__text">Названы самые вредные новогодние салаты</p>
+                    <a href="#" class="news__link link _large">
+                      Названы самые вредные новогодние салаты
                     </a>
                   </li>
                   <li class="news__item">
                     <a href="#" class="news__category-prefix">ЛЕДИ</a>
-                    <a href="#" class="news__link">
-                      <p class="news__text">Григорий Лепс разводится после 20 лет брака</p>
+                    <a href="#" class="news__link link _large">
+                      Григорий Лепс разводится после 20 лет брака
                     </a>
                   </li>
                   <li class="news__item">
                     <a href="#" class="news__category-prefix">HI-TECH</a>
-                    <a href="#" class="news__link">
-                      <p class="news__text">
+                    <a href="#" class="news__link link _large">
                         Обычные телевизоры уходят в прошлое. Их заменит Freestyle
-                      </p>
                     </a>
                   </li>
                 </ul>
@@ -811,7 +735,7 @@
                     <a href="#" class="pulse-card__content-resource">НАЦИОНАЛЬНЫЕПРОЕКТЫ.РФ</a>
                     <div class="pulse-card__actions">
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-red" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-red">
                           <use xlink:href="#svg-icon-like"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 780 </span>
@@ -837,13 +761,13 @@
                     <a href="#" class="pulse-card__content-resource">CRAZDOGE</a>
                     <div class="pulse-card__actions">
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-red" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-red">
                           <use xlink:href="#svg-icon-like"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 780 </span>
                       </a>
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-black" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-black">
                           <use xlink:href="#svg-icon-comment"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 96 </span>
@@ -891,13 +815,13 @@
                     <a href="#" class="pulse-card__content-resource">CRAZDOGE</a>
                     <div class="pulse-card__actions">
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-red" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-red">
                           <use xlink:href="#svg-icon-like"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 780 </span>
                       </a>
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-black" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-black">
                           <use xlink:href="#svg-icon-comment"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 96 </span>
@@ -945,7 +869,7 @@
                     <a href="#" class="pulse-card__content-resource">НАЦИОНАЛЬНЫЕПРОЕКТЫ.РФ</a>
                     <div class="pulse-card__actions">
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-red" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-red">
                           <use xlink:href="#svg-icon-like"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 780 </span>
@@ -994,7 +918,7 @@
                     <a href="#" class="pulse-card__content-resource">НАЦИОНАЛЬНЫЕПРОЕКТЫ.РФ</a>
                     <div class="pulse-card__actions">
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-red" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-red">
                           <use xlink:href="#svg-icon-like"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 780 </span>
@@ -1020,13 +944,13 @@
                     <a href="#" class="pulse-card__content-resource">CRAZDOGE</a>
                     <div class="pulse-card__actions">
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-red" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-red">
                           <use xlink:href="#svg-icon-like"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 780 </span>
                       </a>
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-black" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-black">
                           <use xlink:href="#svg-icon-comment"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 96 </span>
@@ -1054,7 +978,7 @@
                     <a href="#" class="pulse-card__content-resource">НАЦИОНАЛЬНЫЕПРОЕКТЫ.РФ</a>
                     <div class="pulse-card__actions">
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-red" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-red">
                           <use xlink:href="#svg-icon-like"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 780 </span>
@@ -1101,13 +1025,13 @@
                     <a href="#" class="pulse-card__content-resource">CRAZDOGE</a>
                     <div class="pulse-card__actions">
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-red" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-red">
                           <use xlink:href="#svg-icon-like"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 780 </span>
                       </a>
                       <a class="pulse-card__action">
-                        <svg class="pulse-card__action-icon _hover-black" height="16" width="16">
+                        <svg class="pulse-card__action-icon _hover-black">
                           <use xlink:href="#svg-icon-comment"></use>
                         </svg>
                         <span class="pulse-card__action-count"> 96 </span>
