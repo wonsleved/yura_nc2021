@@ -632,5 +632,21 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      let mainContent = document.getElementsByClassName('main-content')[0];
+
+      window.addEventListener('scroll', (e) => {
+
+        if (window.scrollY + window.innerHeight > document.body.clientHeight) {
+          let contentCard = document.getElementsByClassName('sm-content')[0].cloneNode(true);
+          console.log(`${window.scrollY} + ${window.innerHeight} > ${document.body.clientHeight}`);
+          mainContent.appendChild(contentCard);
+        }
+      });
+
+    </script>
+
+
   </body>
 </html>
